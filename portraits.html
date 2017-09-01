@@ -25,26 +25,33 @@
         <link href="css/thumbnail-gallery.css" rel="stylesheet">
         <meta http-equiv="content-type" content="text/html; charset=UTF-8">
         <link rel="stylesheet" href="css/blueimp-gallery.min.css">
-    <style>
-    body {
-        font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        padding-top: 3rem;
-        padding-bottom: 5rem;
-        color: #404040;
-        }
 
-    .starter-template {
-        padding-top: 2rem;
-        padding-bottom: 3rem;
-        text-align: center;
-        }
-    ul.nav li a, ul.nav li a:visited {
-        color: black;
-    }
+        <style>
+            body {
+                font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+                padding-top: 3rem;
+                padding-bottom: 5rem;
+                color: #404040;
+            }
 
-    @media (min-width: 992px) {
-    }
-    </style>
+            .starter-template {
+                padding-top: 2rem;
+                padding-bottom: 3rem;
+                text-align: center;
+            }
+
+            ul.nav li a, ul.nav li a:visited {
+                color: black;
+            }
+
+            .logo {
+                max-width: 100%; 
+                height: auto;
+            }
+
+            @media (min-width: 992px) {
+            }
+        </style>
 
     </head>
     
@@ -64,14 +71,8 @@
 
             <div class="starter-template">
                 
-                <picture>
-
-                <source srcset="logo256.png" media="(max-width: 480px)">
-
-                <img src="logo400px.gif" alt="logo AP"> 
-
-                </picture>
-
+                <img src="logo.png" alt="logo AP" class="logo" width="400px">
+                
             </div>
 
             <nav class="navbar navbar-light rounded navbar-toggleable-md">
