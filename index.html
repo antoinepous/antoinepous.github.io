@@ -64,6 +64,16 @@
 			  display: table;
 			}
            
+            
+            .cadre span {
+				visibility: hidden;
+				opacity:0.7;
+			}
+
+			.cadre img:hover + span {
+				visibility: visible;
+				opacity:0.7;
+			}
 
 		</style>
 
@@ -114,16 +124,23 @@
 					<hr width="100%" color="#CCCCCC">
 					<p></p>
 
-					<div class="row">
+					<div class="cadre">
 
-					  <div class="column" >
+					<div class="row">
+					
+
+					  <div class="column"  >
 					    <img src="http://antoinepous.com/home/toxic.jpg" alt="toxic" style="width:100%">
+					    <span>Ton texte</span>
 					  </div>
+					
 					  <div class="column">
 					    <img src="http://antoinepous.com/home/dodo.jpg" alt="dodo" style="width:100%">
+					    <span>Ton texte</span>
 					  </div>
 					  <div class="column">
 					    <img src="http://antoinepous.com/home/reverie.jpg" alt="reverie" style="width:100%">
+					    <span>Ton texte</span>
 					  </div>
 					</div>
 
@@ -141,6 +158,8 @@
 					    <img src="http://antoinepous.com/home/becane.jpg" alt="bécane" style="width:100%">
 					  </div>
 					</div>
+
+				</div>
 
 					
 					
