@@ -1,15 +1,15 @@
-<style>
+
 			body {
 				
 				padding-top: 3rem;
 				padding-bottom: 5rem;
 				color: #404040;
-				font-size:50px;
+				font-size:14px;
 			}
 
 			@font-face {
-    			font-family: HelveticaNeue-Light;
-    			src: local(HelveticaNeue-Light), url('/typo/HelveticaNeue-Light-08.ttf') format('truetype');
+    			font-family: HelveticaNeue-Thin;
+    			src: local(HelveticaNeue-Thin), url('typo/HelveticaNeue-Thin-13.ttf') format('truetype');
 			}
 
 			.starter-template {
@@ -58,4 +58,4 @@
             
 
 
-</style>
+
