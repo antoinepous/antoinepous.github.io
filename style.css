@@ -5,12 +5,12 @@
 				padding-bottom: 5rem;
 				color: #404040;
 				font-size:14px;
+				font-family: HelveticaNeue;
+    			src: url('/font/HelveticaNeue-01.ttf');
 			}
 
-			@font-face {
-    			font-family: HelveticaNeue-Thin;
-    			src: local(HelveticaNeue-Thin), url('typo/HelveticaNeue-Thin-13.ttf') format('truetype');
-			}
+			
+			
 
 			.starter-template {
 				padding-top: 0rem;
