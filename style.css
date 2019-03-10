@@ -9,7 +9,13 @@
     			src: url('/font/HelveticaNeue-01.ttf');
 			}
 
-			
+			@media (min-width: 992px) {
+            }
+
+            .row{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }	
 			
 
 			.starter-template {
@@ -55,6 +61,46 @@
 			    bottom: 0;
 			    left: 0;
 			}
+
+			.dropdown-item {
+				color: #404040;
+				font-size:14px;
+				font-family: HelveticaNeue;
+    			src: url('/font/HelveticaNeue-01.ttf');
+
+			}
+
+			.annee {
+            	color: rgb(255,255,255);
+            	font-weight: bold;
+            	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            	background-color: rgb(97,125,138);
+            	position: absolute;
+            	padding-left: 0.5rem;            	
+            }
+
+            ul {
+   				margin-left:1rem;
+				padding-left:0;
+				line-height: 150%;
+				text-align: justify;
+			}
+
+			.titre {
+				color: rgb(255,255,255);
+				font-weight: bold;
+            	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            	background-color: rgb(71,148,142);
+            	font-size: 120%;
+            	letter-spacing: 1px;
+            	padding-left: 0.5rem;
+			}
+
+			.sticker {
+                max-width: 100%;
+                height: 50px;
+            
+
             
 
 
