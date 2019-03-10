@@ -3,7 +3,7 @@
 				
 				padding-top: 3rem;
 				padding-bottom: 5rem;
-				color: #404040;
+				color: rgb(0,0,0);
 				font-size:14px;
 				font-family: HelveticaNeue;
     			src: url('/font/HelveticaNeue-01.ttf');
@@ -26,7 +26,7 @@
 			}
 
 			ul.nav li a, ul.nav li a:visited {
-					color: black;
+					color: rgb(150,150,150);
 			}
 
 			.logo {
@@ -63,12 +63,22 @@
 			}
 
 			.dropdown-item {
-				color: #404040;
+				color: rgb(150,150,150);
 				font-size:14px;
 				font-family: HelveticaNeue;
     			src: url('/font/HelveticaNeue-01.ttf');
 
 			}
+
+			.nav-item {
+				color: rgb(150,150,150);
+				font-size:14px;
+				font-family: HelveticaNeue;
+    			src: url('/font/HelveticaNeue-01.ttf');
+
+			}
+
+
 
 			.annee {
             	color: rgb(255,255,255);
