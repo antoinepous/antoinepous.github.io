@@ -109,7 +109,7 @@
 
 			.sticker {
                 max-width: 100%;
-                height: 50px;
+                height: 40px;
             }
             
             .film {
@@ -119,7 +119,20 @@
 				font-weight: bold;
 				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-            	}
+            }
+
+            .milieu {
+                display: block;
+                margin: 0 auto;
+                max-width: 100%; 
+                height: auto;
+                text-align: center;
+            }
+
+            .para1 {
+                text-align: center;
+                align: center;
+            }
 
 
             
