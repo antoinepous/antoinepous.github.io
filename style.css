@@ -13,10 +13,14 @@
             }
 
             .row{
+                margin-top: 1rem;
+                margin-bottom: 1rem;
+            }	
+			
+			.row-home{
                 margin-top: 0rem;
                 margin-bottom: 0rem;
             }	
-			
 
 			.starter-template {
 				padding-top: 0rem;
