@@ -13,8 +13,8 @@
             }
 
             .row{
-                margin-top: 1rem;
-                margin-bottom: 1rem;
+                margin-top: 0rem;
+                margin-bottom: 0rem;
             }	
 			
 
@@ -44,7 +44,7 @@
 			.column {
 			  float: left;
 			  width: 33.33%;
-			  padding: 15px;
+			  padding: 10px;
 			}
 
 			.row::after {
