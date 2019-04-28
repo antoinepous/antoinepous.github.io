@@ -71,15 +71,24 @@
             <p class="bloctext"><b>Test de dynamique avec l'ARRI alexa SXT</b></p>
 
             <p class="bloctext">
-                J'ai eu l'occasion durant un stage dans une boîte de location de matériel de cinéma de tester l'alexa SXT. J'ai voulu connaître sa dynamique réelle exploitable. Pour cela, je me suis filmé à côté d'une charte Color Checker, éclairé par un projecteur Skypanel à 5600K. La caméra était réglée en 2K 16/9 (2048x1152) en Prores 4444 en Log-C.
-
-                Pour exposer l'image de réference j'ai utilisée un waveform pour placer le signal le plus au centre possible. Ensuite j'ai surexposé et sousexposé l'image par incrément d'un diaph. J'ai ensuite importé les rushes dans DaVinci Resolve et j'ai converti le log-C en Rec709 grâce à une LUT. J'ai descendu le signal des images surexposées et remonté celui des images sousexposées pour le faire matcher avec celui de l'image de référence.
-            </p>  
+              
+                J’ai réalisé un test de dynamique de l’Alexa SXT, une caméra très utilisée en long-métrage, réputée pour sa grande latitude de dynamique et sa fiabilité colorimétrique. Pour cela j’ai réglé la caméra en Prores 444, en 24p et j’ai monté une optique Leica Summicron 40mm. Je me suis placé devant un fond neutre et à côté d’une mire Color Checker afin d’obtenir une référence fiable de couleurs et une référence de teinte de peau pour pouvoir analyser les dérives chromatiques susceptibles d’apparaitre lors d’expositions extrêmes. La scène est éclairée par un projecteur ARRI Skypanel en 5600K. Pour l’image de référence j’ai exposé le visage à 60% du waveform afin d’obtenir un signal équilibré. Le diaphragme est de T5,6. J’ai ensuite poussé l’exposition jusqu’à la perte de détails sur le visage et inversement jusqu’à une forte sous-exposition.
+            </p>
 
             <center>
             <img src="http://antoinepous.com/articles/alexasxt/IMG_2759.jpg" alt="alexasxt" class="illustration">
             </center>
 
+            <p class="bloctext">
+                La post-production a été effectuée sur le logiciel Da Vinci Resolve, j’ai appliqué la LUT « ARRI LOG-C to Rec709 » sur tous les plans et avec le réglage offset j’ai descendu ou augmenté le signal pour le faire correspondre avec celui du plan de référence. Il est ainsi possible de déterminer jusqu’à quel stade l’image n’est plus exploitable.
+            </p>  
+
+
+            
+
+            <p class="bloctext">
+            En surexposition, on commence à observer un aplat blanc sur le fond au bout de +4 diaphragmes mais l'image est  encore exploitable. À +5 diaphragme la peau perd des informations, ce qui devient gênant. En sous-exposition le bruit du capteur devient vraiment présent à -5 diaphragmes et l’image est inexploitable à -6. La consistance des couleurs est excellente, il est cependant à noter que qu’une légère dominante magenta apparait en surexposition et verte en sous-exposition.
+            </p> 
            
 
 
