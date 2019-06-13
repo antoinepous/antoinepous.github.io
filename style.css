@@ -4,7 +4,7 @@
 				padding-top: 3rem;
 				padding-bottom: 5rem;
 				color: rgb(0,0,0);
-				font-size:14px;
+				font-size:16px;
 				font-family: HelveticaNeue;
     			src: url('/font/HelveticaNeue-01.ttf');
 			}
@@ -107,10 +107,10 @@
 
 
 			.annee {
-            	color: rgb(255,255,255);
+            	color: rgb(40,40,40);
             	font-weight: bold;
             	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            	background-color: rgb(97,125,138);
+            	font-size:36px;
             	position: absolute;
             	padding-left: 0.5rem;            	
             }
@@ -200,6 +200,11 @@
 			  padding: 16px 32px;
 			}
             
+            .cv {
+            	text-align:justify; 
+   				width:300px;
+   				}
+
 
 
 
