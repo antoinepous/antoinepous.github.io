@@ -112,7 +112,6 @@
             	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             	font-size:36px;
             	position: absolute;
-            	padding-left: 0.5rem;            	
             }
 
             ul {
@@ -202,7 +201,7 @@
             
             .cv {
             	text-align:justify; 
-   				width:300px;
+   				width:40rem;
    				}
 
 
