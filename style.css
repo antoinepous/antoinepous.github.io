@@ -29,9 +29,11 @@
 
 			}
 
+			/*
 			ul.nav li a, ul.nav li a:visited {
 					color: rgb(150,150,150);
 			}
+			*/
 
 			.logo {
 				max-width: 100%; 
@@ -136,12 +138,15 @@
                 height: 40px;
             }
             
+            /*
             .film {
             	font-size: 16px;
             	color: rgb(100,100,100);
 				font-weight: bold;
 				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
             }
+
+            */
 
             .milieu {
                 display: block;
@@ -163,6 +168,7 @@
   				color: white;
 			}
 
+			/*
 			.image {
 			  opacity: 1;
 			  display: block;
@@ -171,6 +177,8 @@
 			  transition: .3s ease;
 			  backface-visibility: hidden;
 			}
+
+			*/
 
 			.middle {
 			  transition: .3s ease;
