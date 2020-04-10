@@ -5,7 +5,7 @@
 				padding-bottom: 5rem;
 				color: rgb(0,0,0);
 				font-size:16px;
-				font-family: "HelveticaNeue";
+				font-family: "HelveticaNeue"; sans-serif
 				font-weight: all
 			}
 
@@ -15,12 +15,13 @@
 				font-style: normal;
 				font-weight: normal;
 				font-size: all;
-				src: local('HelveticaNeue');
+				src: local("HelveticaNeue"), 
+				local("Helvetica Neue Bold"),
 				
 
-				src: url('font/HelveticaNeue-01.ttf') format(truetype);
-				src: url('font/HelveticaNeue-01.eot') format(embedded-opentype);
-				src: url('font/HelveticaNeue.woff') format(woff);
+				src: url("www.antoinepous.com/font/HelveticaNeue-01.ttf") format(truetype);
+				src: url("www.antoinepous.com/font/HelveticaNeue-01.eot") format(embedded-opentype);
+				src: url("www.antoinepous.com/font/HelveticaNeue.woff") format(woff);
 
 				
 
