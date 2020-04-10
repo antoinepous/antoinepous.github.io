@@ -18,6 +18,7 @@
 				src: url(font/HelveticaNeue-01.ttf) format(truetype);
 				src: url('HelveticaNeue-01.eot') format(embedded-opentype);
 				src: url('HelveticaNeue.woff') format(woff);
+			}
 
 			@media (min-width: 992px) {
             }
