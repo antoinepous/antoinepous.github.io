@@ -11,11 +11,13 @@
 			@font-face
 			{
 				font-family: "HelveticaNeue";
-				[font-style: all]
-				[font-weight: normal]
-				[font-size: all]
+				font-style: all;
+				font-weight: all;
+				font-size: all;
 				src: local('HelveticaNeue');
 				src: local('HelveticaNeue-Bold');
+				src: local('HelveticaNeue-BoldItalic');
+
 				src: url('font/HelveticaNeue-01.ttf') format(truetype);
 				src: url('font/HelveticaNeue-01.eot') format(embedded-opentype);
 				src: url('font/HelveticaNeue.woff') format(woff);
@@ -135,7 +137,7 @@
 			.annee {
             	color: rgb(40,40,40);
             	font-weight: bold;
-            	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            	font-family: "HelveticaNeue";
             	font-size:36px;
             	position: absolute;
             }
