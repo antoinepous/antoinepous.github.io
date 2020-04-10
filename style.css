@@ -15,20 +15,13 @@
 				font-weight: normal;
 				font-size: all;
 				src: local('HelveticaNeue');
-				src: local('HelveticaNeue-Bold');
-				src: local('HelveticaNeue-BoldItalic');
+				
 
 				src: url('font/HelveticaNeue-01.ttf') format(truetype);
 				src: url('font/HelveticaNeue-01.eot') format(embedded-opentype);
 				src: url('font/HelveticaNeue.woff') format(woff);
 
-				src: url('font/HelveticaNeue-Bold-02.ttf') format(truetype);
-				src: url('font/HelveticaNeue-Bold-02.eot') format(embedded-opentype);
-				src: url('font/HelveticaNeue-Bold.woff') format(woff);
-
-				src: url('font/HelveticaNeue-BoldItalic-04.ttf') format(truetype);
-				src: url('font/HelveticaNeue-BoldItalic-04.eot') format(embedded-opentype);
-				src: url('font/HelveticaNeue-BoldItalic.woff') format(woff);
+				
 
 				
 
