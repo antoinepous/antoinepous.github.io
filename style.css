@@ -11,8 +11,8 @@
 			@font-face
 			{
 				font-family: "HelveticaNeue";
-				font-style: all;
-				font-weight: all;
+				font-style: normal;
+				font-weight: normal;
 				font-size: all;
 				src: local('HelveticaNeue');
 				src: local('HelveticaNeue-Bold');
