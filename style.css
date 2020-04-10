@@ -15,9 +15,7 @@
 				font-style: normal;
 				font-weight: normal;
 				font-size: all;
-				src: local("HelveticaNeue"), 
-				local("Helvetica Neue Bold"),
-				
+				src: local("HelveticaNeue"), local("Helvetica Neue Bold");
 
 				src: url("www.antoinepous.com/font/HelveticaNeue-01.ttf") format(truetype);
 				src: url("www.antoinepous.com/font/HelveticaNeue-01.eot") format(embedded-opentype);
@@ -114,16 +112,16 @@
 			.dropdown-item {
 				color: rgb(150,150,150);
 				font-size:14px;
-				font-family: HelveticaNeue;
-    			src: url('/font/HelveticaNeue-01.ttf');
+				font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    			
 
 			}
 
 			.nav-item {
 				color: rgb(150,150,150);
 				font-size:14px;
-				font-family: HelveticaNeue;
-    			src: url('/font/HelveticaNeue-01.ttf');
+				font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+    			
 
 			}
 
@@ -132,7 +130,7 @@
 			.annee {
             	color: rgb(40,40,40);
             	font-weight: bold;
-            	font-family: "HelveticaNeue";
+            	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
             	font-size:36px;
             	position: absolute;
             }
