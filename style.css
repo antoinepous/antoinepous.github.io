@@ -6,8 +6,15 @@
 				color: rgb(0,0,0);
 				font-size:16px;
 				font-family: HelveticaNeue;
-    			src: url('/font/HelveticaNeue-01.ttf');
 			}
+
+			@font-face
+			{
+				font-family: "HelveticaNeue";
+				[font-style: all]
+				[font-weight: normal]
+				[font-size: all]
+				src: [local('HelveticaNeue'),] url(font/HelveticaNeue-01.ttf) [format(truetype)];
 
 			@media (min-width: 992px) {
             }
