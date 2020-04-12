@@ -5,28 +5,45 @@
 				padding-bottom: 5rem;
 				color: rgb(0,0,0);
 				font-size:16px;
-				font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
+				font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif; 
 				font-weight: all
 			}
 
-			@font-face
-			{
-				font-family: "HelveticaNeue";
-				font-style: normal;
-				font-weight: normal;
-				font-size: all;
-				src: local("HelveticaNeue"), local("Helvetica Neue Bold");
+			.annee {
+            	color: rgb(40,40,40);
+            	font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif;
+            	font-weight: bold;
+            	font-size:36px;
+            	position: absolute;
+            }
 
-				src: url("www.antoinepous.com/font/HelveticaNeue-01.ttf") format(truetype);
-				src: url("www.antoinepous.com/font/HelveticaNeue-01.eot") format(embedded-opentype);
-				src: url("www.antoinepous.com/font/HelveticaNeue.woff") format(woff);
-
-				
-
-				
-
-
+            .titre {
+				color: rgb(255,255,255);
+            	font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif;
+            	font-weight: bold;
+            	background-color: rgb(71,148,142);
+            	font-size: 120%;
+            	letter-spacing: 1px;
+            	padding-left: 0.5rem;
 			}
+
+			.text {
+			  
+			  color: white;
+			  font-size: 50px;
+			  font-weight: bold;
+			  padding: 16px 32px;
+			}
+            
+            .cv {
+            	
+            	text-align:justify; 
+   				width:40rem;
+   				}
+
+
+
+			
 
 			@media (min-width: 992px) {
             }
@@ -127,13 +144,7 @@
 
 
 
-			.annee {
-            	color: rgb(40,40,40);
-            	font-weight: bold;
-            	font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
-            	font-size:36px;
-            	position: absolute;
-            }
+			
 
             ul {
    				margin-left:1rem;
@@ -142,15 +153,7 @@
 				text-align: justify;
 			}
 
-			.titre {
-				color: rgb(255,255,255);
-				font-weight: bold;
-            	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            	background-color: rgb(71,148,142);
-            	font-size: 120%;
-            	letter-spacing: 1px;
-            	padding-left: 0.5rem;
-			}
+			
 
 			.sticker {
                 max-width: 100%;
@@ -187,17 +190,7 @@
   				color: white;
 			}
 
-			/*
-			.image {
-			  opacity: 1;
-			  display: block;
-			  width: 100%;
-			  height: auto;
-			  transition: .3s ease;
-			  backface-visibility: hidden;
-			}
-
-			*/
+		
 
 			.middle {
 			  transition: .3s ease;
@@ -218,18 +211,7 @@
 			  opacity: 1;
 			}
 
-			.text {
-			  
-			  color: white;
-			  font-size: 50px;
-			  font-weight: bold;
-			  padding: 16px 32px;
-			}
-            
-            .cv {
-            	text-align:justify; 
-   				width:40rem;
-   				}
+			
 
 
 
