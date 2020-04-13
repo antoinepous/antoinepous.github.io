@@ -3,6 +3,8 @@
 				
 				padding-top: 3rem;
 				padding-bottom: 5rem;
+				padding-left: 5rem;
+				padding-right: 5rem;
 				color: rgb(70,70,70);
 				font-size:16px;
 				font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif; 
@@ -11,10 +13,46 @@
 
 			.annee {
             	
-            	
-            	margin-bottom: 1rem;
+            	margin-bottom: 0rem;
             	width: 70px;
             }
+
+            #horizontal { 
+            	list-style: none;
+            	text-align: center;
+            	padding-left: 0em;
+            	padding-right: 1em;
+            	
+            	
+
+
+            }
+
+            #horizontal li {
+            	display: inline-block;
+            	padding-left: 1em;
+            	
+            }
+
+            
+
+
+            .menu {
+            	text-decoration: none;
+            	color: rgb(70,70,70);
+            }
+
+            .menu:hover {
+            	color: rgb(150,150,150);
+            }
+
+            .logo {
+				max-width: 100%; 
+				height: auto;
+				text-align: center;
+
+			}
+
 
             .titre {
 				color: rgb(255,255,255);
@@ -25,30 +63,21 @@
             	letter-spacing: 1px;
             	padding-left: 0.5rem;
 			}
-
-			/*
-			.text {
-			  
-			  color: white;
-			  font-size: 50px;
-			  font-weight: bold;
-			  padding: 16px 32px;
-			}
-			*/
             
             .cv {
             	
             	text-align:justify; 
    				width:40rem;
+   				margin-left:1rem;
+				padding-left:0;
+				line-height: 150%;
+				
    				}
 
 
-			@media (max-device-width: 1080px) {
+			/*@media (max-device-width: 1080px) {
             }
-
-
-
-
+            */
 
             .row{
                 margin-top: 1rem;
@@ -60,25 +89,9 @@
                 margin-bottom: 0rem;
             }	
 
-			.starter-template {
-				padding-top: 0rem;
-				padding-bottom: 0rem;
-				text-align: center;
+				
 
-			}
-
-			/*
-			ul.nav li a, ul.nav li a:visited {
-					color: rgb(150,150,150);
-			}
-			*/
-
-			.logo {
-				max-width: 100%; 
-				height: auto;
-
-			}
-
+			
 			.big {
             	line-height: 200%;
             	text-align: justify;
@@ -94,127 +107,31 @@
     			margin-right: auto;
     			width: 40em
 
-            	}
+            }
 
             .illustration {
             	
             	margin-left: auto;
     			margin-right: auto;
     			width: 40em
+            }
 
-
-            	}
-
-
-			
 			.column {
-			  float: left;
-			  width: 33.33%;
-			  padding: 0px;
+			  	float: left;
+			  	width: 33.33%;
+			  	padding: 0px;
 			}
 
 			.row::after {
-			  content: "";
-			  clear: both;
-			  display: table;
+			  	content: "";
+			  	clear: both;
+			  	display: table;
 			}
            
-
-           	
 
 			.column .caption {
 				position: absolute;
 			    bottom: 0;
 			    left: 0;
 			}
-
-			.dropdown-item {
-				color: rgb(150,150,150);
-				font-size:14px;
-				font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
-    			
-
-			}
-
-			.nav-item {
-				color: rgb(150,150,150);
-				font-size:14px;
-				font-family: "HelveticaNeue", Helvetica, Arial, sans-serif;
-    			
-
-			}
-
-
-
-			
-
-            ul {
-   				margin-left:1rem;
-				padding-left:0;
-				line-height: 150%;
-				text-align: justify;
-			}
-
-			
-
-			.sticker {
-                max-width: 100%;
-                height: 40px;
-            }
-            
-            /*
-            .film {
-            	font-size: 16px;
-            	color: rgb(100,100,100);
-				font-weight: bold;
-				font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-            }
-
-            */
-
-            .milieu {
-                display: block;
-                margin: 0 auto;
-                max-width: 100%; 
-                height: auto;
-                text-align: center;
-
-            }
-
-            .para1 {
-                text-align: center;
-                align: center;
-            }
-
-            .effect {
-  				position: relative;
- 			
-  				color: white;
-			}
-
-		
-
-			.middle {
-			  transition: .3s ease;
-			  opacity: 0;
-			  position: absolute;
-			  top: 50%;
-			  left: 50%;
-			  transform: translate(-50%, -50%);
-			  -ms-transform: translate(-50%, -50%);
-			  text-align: center;
-			}
-
-			.effect:hover .image {
-			  opacity: 0.9;
-			}
-
-			.effect:hover .middle {
-			  opacity: 1;
-			}
-
-			
-
-
-
 
