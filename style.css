@@ -3,18 +3,17 @@
 				
 				padding-top: 3rem;
 				padding-bottom: 5rem;
-				color: rgb(0,0,0);
+				color: rgb(70,70,70);
 				font-size:16px;
 				font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif; 
 				font-weight: all
 			}
 
 			.annee {
-            	color: rgb(40,40,40);
-            	font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif;
-            	font-weight: bold;
-            	font-size:36px;
+            	
             	position: absolute;
+            	margin-bottom: 10rem;
+            	width: 70px;
             }
 
             .titre {
@@ -27,6 +26,7 @@
             	padding-left: 0.5rem;
 			}
 
+			/*
 			.text {
 			  
 			  color: white;
@@ -34,6 +34,7 @@
 			  font-weight: bold;
 			  padding: 16px 32px;
 			}
+			*/
             
             .cv {
             	
@@ -42,11 +43,12 @@
    				}
 
 
-
-			
-
-			@media (min-width: 992px) {
+			@media (max-device-width: 1080px) {
             }
+
+
+
+
 
             .row{
                 margin-top: 1rem;
