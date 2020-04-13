@@ -44,6 +44,7 @@
             }
 
             .menu:hover {
+            	text-decoration: none;
             	color: rgb(150,150,150);
             }
 
@@ -85,7 +86,7 @@
    				width:auto;
    				padding-left:0rem;
 				margin-right:1rem;
-				line-height: 150%;
+				line-height: 130%;
 				
    				}
    			}
