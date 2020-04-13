@@ -83,11 +83,19 @@
 				}				
    			}
             
-            .row{
-                margin-top: 1rem;
-                margin-bottom: 1rem;
+            .row {
+                
                 padding-left: 0.5rem;
+                padding-right: 0.5rem;
+
             }	
+
+            .col-sm-4 {
+            	padding-top: 0.5rem;
+            	padding-bottom: 0.5rem;
+            	padding-left: 0.5rem;
+            	padding-right: 0.5rem;
+            }
 
 			.column {
 			  	float: left;
