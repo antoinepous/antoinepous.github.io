@@ -67,9 +67,10 @@
             .cv {
             	
             	text-align:justify; 
-   				width:40rem;
-   				margin-left:1rem;
-				padding-left:0;
+   				width:auto;
+   				padding-left:1rem;
+				margin-right:auto;
+
 				line-height: 150%;
 				
    				}
