@@ -1,8 +1,8 @@
 
 			body {
 				
-				padding-top: 2rem;
-				padding-bottom: 5rem;
+				padding-top: 1rem;
+				padding-bottom: 3rem;
 				padding-left: 0rem;
 				padding-right: 0rem;
 				color: rgb(70,70,70);
@@ -11,8 +11,7 @@
 				font-weight: all
 			}
 
-			.annee {
-            	
+			.annee {          	
             	margin-bottom: 0rem;
             	margin-left: 1rem;
             	width: 70px;
@@ -23,20 +22,13 @@
             	text-align: center;
             	padding-left: 0em;
             	padding-right: 1em;
-            	
-            	
-
-
+            	margin-top: 1rem;
             }
 
             #horizontal li {
             	display: inline-block;
-            	padding-left: 1em;
-            	
+            	padding-left: 1em;   	
             }
-
-            
-
 
             .menu {
             	text-decoration: none;
