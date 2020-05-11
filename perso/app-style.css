@@ -2,9 +2,9 @@
 	font-family: 'Roboto', sans-serif; 
 	font-weight: 900;
 	font-size: 28px; 
-	text-align: center; 
+	text-align: left; 
 	color: white; 
-	max-width: 60%; 
+	max-width: 100%; 
 	line-height: 1.5; 
 	
 }
@@ -22,7 +22,4 @@
 body {
 	background-color: black;
 	margin: 5%;
-
-	float: right;
-	background-color: black; 
 }
