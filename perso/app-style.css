@@ -2,7 +2,7 @@
 	font-family: 'Roboto', sans-serif; 
 	font-weight: 900;
 	font-size: 28px; 
-	text-align: left; 
+	text-align: center; 
 	color: white; 
 	max-width: 100%; 
 	line-height: 1.5; 
@@ -20,6 +20,6 @@
 }
 
 body {
-	background-color: black;
+	background-color: #497288;
 	margin: 5%;
 }
