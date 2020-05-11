@@ -1,0 +1,28 @@
+.titre {
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 900;
+	font-size: 28px; 
+	text-align: center; 
+	color: white; 
+	max-width: 60%; 
+	line-height: 1.5; 
+	
+}
+
+.contenu {
+	font-family: 'Jost', sans-serif; 
+	font-weight: 300;
+	font-size: 16px; 
+	text-align: justify; 
+	color: white; 
+	max-width: 80%; 
+	line-height: 2;
+}
+
+body {
+	background-color: black;
+	margin: 5%;
+
+	float: right;
+	background-color: black; 
+}
