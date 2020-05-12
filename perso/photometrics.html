@@ -4,14 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.antoinepous.com/perso/app-style.css" media="all" type="text/css"/>
+    <link rel="stylesheet" href="app-style.css" media="all" type="text/css"/>
     <title>Photometrics</title>
 </head>
 <body>
-<div>
-    <h1 class="titre">PHOTOMETRIC DATABASE 1.8</h1>
-    <p class="label">FPS<input placeholder="Enter some text" name="fps"/></p>
-    <p class="label">ISO<input placeholder="Enter some text" name="iso"/></p>
+<div class="root">
+    <h1 class="titre">photometric database 1.8</h1>
+
+    <div class="label"> 
+    <p>FPS &nbsp; <input placeholder="Enter some text" name="fps" id="fps"/> </p>
+    <p>ISO &nbsp; <input placeholder="Enter some text" name="iso" id="iso"/> </p>
+    </div>
+
+    <div id="log">
+
+    </div>
+
+  
+
 </div>
 </body>
+<script>
+
+var requestURL = 'https://www.antoinepous.com/perso/data.json';
+var request = new XMLHttpRequest();
+request.open('GET', requestURL);
+request.responseType = 'json';
+request.send();
+
+const log = document.getElementById("log");
+
+request.onload = function() {
+    var data = request.response;
+    log.textContent = data
+}
+
+    const inputIso = document.getElementById("fps");
+    const inputFps = document.getElementById("iso")
+    const fps = ""
+    const iso = ""
+
+    inputIso.addEventListener('input', updateValue);
+
+    function updateValue(e) {
+    iso = e.target.value;
+    }
+
+    inputFps.addEventListener('input', updateValue);
+
+    function updateValue(e) {
+    fps = e.target.value;
+    }
+
+</script>
 </html>
