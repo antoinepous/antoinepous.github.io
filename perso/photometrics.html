@@ -26,16 +26,24 @@
 </body>
 <script>
 
-var requestURL = 'https://www.antoinepous.com/perso/data.json';
+
 var request = new XMLHttpRequest();
-request.open('GET', requestURL);
-request.responseType = 'json';
+request.onreadystatechange = function() {
+    if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+        var response = JSON.parse(this.responseText);
+        
+    }
+};
+request.open("GET", "https://www.antoinepous.com/perso/data.json");
 request.send();
+
+
+
 
 const log = document.getElementById("log");
 
 request.onload = function() {
-    var data = request.response;
+    var data = response;
     log.textContent = data
 }
 
