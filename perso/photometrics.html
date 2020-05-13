@@ -43,7 +43,7 @@ request.send();
 const log = document.getElementById("log");
 
 request.onload = function() {
-    var data = response;
+    var data = request.response;
     log.textContent = data
 }
 
