@@ -5,8 +5,7 @@ request.onreadystatechange = function() {
         
     }
 };
-request.open("GET", "https://www.antoinepous.com/perso/data.json");
-request.send();
+
 
 request.onload = function() {
     var data = request.response;  
@@ -29,6 +28,6 @@ const inputIso = document.getElementById("fps");
     fps = e.target.value;
     }
 
-document.getElementById("listedata").innerHTML = "test";
+
 
 </script>
