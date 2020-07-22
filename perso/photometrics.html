@@ -6,6 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:wght@900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app-style.css" media="all" type="text/css"/>
     <title>Photometrics</title>
+    
 </head>
 <body>
 <div class="root">
@@ -15,54 +16,23 @@
     <p>FPS &nbsp; <input placeholder="Enter some text" name="fps" id="fps"/> </p>
     <p>ISO &nbsp; <input placeholder="Enter some text" name="iso" id="iso"/> </p>
     </div>
+    
+    <select id="listedata">
+        <option value="Black">Black</option>
+        <option value="Red">Red</option>
+        <option value="Blue">Blue</option>
+        <option value="Yellow">Yellow</option>
+        <option value="Green">Green</option>
 
-    <div id="log">
 
-    </div>
-
+    </select>
   
 
 </div>
+
 </body>
-<script>
-
-
-var request = new XMLHttpRequest();
-request.onreadystatechange = function() {
-    if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
-        var response = JSON.parse(this.responseText);
-        
-    }
-};
-request.open("GET", "https://www.antoinepous.com/perso/data.json");
-request.send();
+<script src="../script.js"></script>
 
 
 
-
-const log = document.getElementById("log");
-
-request.onload = function() {
-    var data = request.response;
-    log.textContent = data
-}
-
-    const inputIso = document.getElementById("fps");
-    const inputFps = document.getElementById("iso")
-    const fps = ""
-    const iso = ""
-
-    inputIso.addEventListener('input', updateValue);
-
-    function updateValue(e) {
-    iso = e.target.value;
-    }
-
-    inputFps.addEventListener('input', updateValue);
-
-    function updateValue(e) {
-    fps = e.target.value;
-    }
-
-</script>
 </html>
