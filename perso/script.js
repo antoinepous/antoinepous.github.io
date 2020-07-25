@@ -74,7 +74,7 @@ function listboxresult() {
             32: "32",
             45: "45",
             64: "64",
-            "surex": "surex",
+            "overex": "overex",
 
             0.5: "0 + 1/2",
             1.2: "1 + 1/2",
@@ -123,7 +123,7 @@ function listboxresult() {
         }
 
         else if (i > 64.0) {
-            app.push("surex");  
+            app.push("overex");  
         }
 
         else {
