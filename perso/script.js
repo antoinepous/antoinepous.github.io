@@ -1,27 +1,19 @@
-
-
-
 let inputIso = document.getElementById("fps");
-let isoValue = "24"
+let isoValue = "24";
 
 inputIso.addEventListener('input', updateValueIso);
 
-function updateValueIso(e) {
-  isoValue = e.target.value;
-}
-
 let inputFps = document.getElementById("iso");
-let fpsValue = "800"
+let fpsValue = "800";
 inputFps.addEventListener('input', updateValueFps);
-
-
-
 
 function updateValueFps(f) {
   fpsValue = f.target.value;
 }
 
-
+function updateValueIso(e) {
+  isoValue = e.target.value;
+}
 
 function listboxresult() {
 
@@ -157,9 +149,29 @@ function listboxresult() {
   let litteral = []
   for (let h = 0; h < app.length; h++) {
     litteral[h] = conv[app[h]];
+  } 
+    
+    document.getElementById("1").innerHTML = litteral[0];
+    document.getElementById("2").innerHTML = litteral[1];
+    document.getElementById("3").innerHTML = litteral[2];
+    document.getElementById("5").innerHTML = litteral[3];
+    document.getElementById("10").innerHTML = litteral[4];
+    document.getElementById("20").innerHTML = litteral[5];
+    document.getElementById("30").innerHTML = litteral[6];
+    document.getElementById("50").innerHTML = litteral[7];
+
+    
+    document.getElementById("ecl1").innerHTML = lux[0] + " lx";
+    document.getElementById("ecl2").innerHTML = lux[1] + " lx";
+    document.getElementById("ecl3").innerHTML = lux[2] + " lx";
+    document.getElementById("ecl5").innerHTML = lux[3] + " lx";
+    document.getElementById("ecl10").innerHTML = lux[4] + " lx";
+    document.getElementById("ecl20").innerHTML = lux[5] + " lx";
+    document.getElementById("ecl30").innerHTML = lux[6] + " lx";
+    document.getElementById("ecl50").innerHTML = lux[7] + " lx";
+    
+ 
+    
+    
 
   }
-
-  document.getElementById("resultConversion").innerHTML = litteral;
-}
-
