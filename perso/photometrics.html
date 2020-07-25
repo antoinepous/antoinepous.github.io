@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Roboto:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app-style.css" media="all" type="text/css"/>
     <title>Photometrics</title>
     
@@ -12,27 +13,157 @@
 <div class="root">
     <h1 class="titre">photometric database 1.8</h1>
 
-    <div class="label"> 
-    <p>FPS &nbsp; <input placeholder="Enter some text" name="fps" id="fps"/> </p>
-    <p>ISO &nbsp; <input placeholder="Enter some text" name="iso" id="iso"/> </p>
-    </div>
+
+    <p><input placeholder="24 fps" name="fps" id="fps" class="label"/></p>
+    <p><input placeholder="800 iso" name="iso" id="iso" class="label"/></p>
+
     
-    <select id="listedata">
-        <option value="560000">ARRIMAX 18 Flood</option>
-        <option value="4533">ARRIMAX 18 Spot</option>
-        <option value="10000">ARRIMAX 12 Flood</option>
-        <option value="50000">Alpha 800 PAR Spot Lentille W</option>
-        <option value="400">S30-C 5600K</option>
+    <select name="listbox" id="listedata" size="5" class="listbox">
+        
+        <optgroup label="FLUO">
+            <option value=2600>KINOFLO 4T 120</option>
+            <option value=966>KINOFLO 4T 60</option>
+        </optgroup>
+        
+        <optgroup label="HMI">
+            <option value=995000>ARRIMAX 18 Flood</option>
+            <option value=9310047>ARRIMAX 18 Spot</option>
+            <option value=>ARRIMAX 12 Flood</option>
+            <option value=>ARRIMAX 12 Spot</option>
+            <option value=>ARRI M90 Flood</option>
+            <option value=>ARRI M90 Spot</option>
+            <option value=>ARRI M90 6kW Flood</option>
+            <option value=>ARRI M90 6kW Spot</option>
+            <option value=>ARRI M40 Flood</option>
+            <option value=>ARRI M40 Spot</option>
+            <option value=>ARRI M40 2k5W Flood</option>
+            <option value=>ARRI M40 2k5W Spot</option>
+            <option value=>ARRI M18 Flood</option>
+            <option value=>ARRI M18 Spot</option>
+            <option value=>ARRI M18 1k2W Flood</option>
+            <option value=>ARRI M18 1k2W Spot</option>
+            <option value=>ARRI M8 Flood</option>
+            <option value=>ARRI M8 Spot</option>
+            <option value=>ARRI Fresnel Daylight 18 Flood</option>
+            <option value=>ARRI Fresnel Daylight 18 Spot</option>
+            <option value=>ARRI Fresnel Daylight 12 Flood</option>
+            <option value=>ARRI Fresnel Daylight 12 Spot</option>
+            <option value=>ARRI D40 Flood</option>
+            <option value=>ARRI D40 Spot</option>
+            <option value=>ARRI D25 Flood</option>
+            <option value=>ARRI D25 Spot</option>
+            <option value=>ARRI D12 Flood</option>
+            <option value=>ARRI D12 Spot</option>
+            <option value=>ARRI D5 Flood</option>
+            <option value=>ARRI D5 Spot</option>
+            <option value=>Joker 400 Lentille M</option>
+            <option value=>Joker 400 Lentille W</option>
+            <option value=>Joker 400 Lentille SW</option>
+            <option value=>Joker 400 Lentille F</option>
+            <option value=>Joker 800 Lentille M</option>
+            <option value=>Joker 800 Lentille W</option>
+            <option value=>Joker 800 Lentille SW</option>
+            <option value=>Joker 800 Lentille F</option>
+            <option value=>Joker 1600 Lentille M</option>
+            <option value=>Joker 1600 Lentille W</option>
+            <option value=>Joker 1600 Lentille SW</option>
+            <option value=>Joker 1600 Lentille F</option>
+            <option value=>Alpha 800 Flood Lentille F</option>
+            <option value=>Alpha 800 Spot Lentille F</option>
+            <option value=>Alpha 800 PAR Spot Lentille M</option>
+            <option value=>Alpha 800 PAR Spot Lentille W</option>
+            <option value=>Alpha 800 PAR Spot Lentille SW</option>
+            <option value=>Alpha 800 PAR Spot Lentille F</option>
+            <option value=>Alpha 1600 Flood</option>
+            <option value=>Alpha 1600 Spot</option>
+            <option value=>Alpha 4K Lentille Spot Flood</option>
+            <option value=>Alpha 4K Lentille Spot Spot</option>
+            <option value=>Alpha 4K Lentille Flood Flood</option>
+            <option value=>Alpha 4K Lentille Flood Spot</option>
+            <option value=>Alpha 9K Flood</option>
+            <option value=>Alpha 9K Spot</option>
+            <option value=>Alpha 18k Flood</option>
+            <option value=>Alpha 18K Spot</option>
+            <option value=>Broncolor F200 Lentille F</option>
+            <option value=>Broncolor F400 Lentille F</option>
+            <option value=>Broncolor F800 Lentille F</option>
+            <option value=>Broncolor F1600 Lentille F</option>
+            <option value=></option>
+            <option value=></option>
+            <option value=></option>
+            <option value=></option>
+            <option value=></option>
+        </optgroup>
+
+        <optgroup label="LED">
+            <option value=2885>SL1 Switch 5600K</option>
+            <option value=11097>S60-C 5600K</option>
+            <option value=828>Freestyle Mini LED</option>
+        </optgroup>
+        
+        <optgroup label="TH">
+            
+        </optgroup>
+    
     </select>
   
-<span id="result"></span>
 
-<input type="button" id="but1" value="Click" onclick="listboxresult();"/>
-
+<br>
+<input type="button" class="button" id="but1" value="calculate" onclick="listboxresult()">
+<br>
+    
+<span id="resultConversion" class="label"></span>
+    
+<table>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    
+    
+    
+</table>
+    
 </div>
-
+<script src="/script.js"></script>
 </body>
-<script src="../script.js"></script>
+
 
 
 
