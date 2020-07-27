@@ -84,10 +84,6 @@ option {
     font-weight: 500
 }
 
-option:checked {
-    box-shadow: 0 0 10px 100px #FFFFFF inset;
-    
-}
 
 .button {
     text-align: center;
@@ -95,7 +91,7 @@ option:checked {
     color: rgb(35,60,75);
     font-size: 1em;
     font-weight: 900;
-    width: 5em;
+    width: 7em;
     margin-left: auto;
     margin-right: auto;
     display: block;
@@ -104,30 +100,13 @@ option:checked {
     margin-top:0.5em;
     margin-bottom: 0.5em;
     background-color: white;
-    padding: 3px;
+    padding: 0.2em;
 }
 
 .button:active {
     opacity: 0.5;
 }
 
-
-.table {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-	font-size: 18px; 
-    color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    width: 18em;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    border: 1px solid;
-    border-collapse: collapse;
-    border-color: white;
-}
 
 .zebi {
     font-family: 'Roboto', sans-serif;
