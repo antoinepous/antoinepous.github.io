@@ -39,11 +39,14 @@ input {
     border-style: solid;
     border-radius: 10px;
     padding: 1px;
+    user-select: all;
+    -webkit-user-select: all;
     
 }
 
 input:focus {
     outline: none;
+    
 }
 
 select:focus {
