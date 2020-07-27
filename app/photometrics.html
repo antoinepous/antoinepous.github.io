@@ -14,16 +14,16 @@
     <h1 class="titre">photometric database 1.8</h1>
 
     <div class="input">
-        <p><input placeholder="24" name="fps" id="fps" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:2em;"/>fps
+        <p><input value="24" name="fps" id="fps" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:2em;"/>fps
     
-        <input placeholder="800" name="iso" id="iso" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:3em;"/>iso
+        <input value="800" name="iso" id="iso" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:3em;"/>iso
             
-        <input placeholder="3" name="dist" id="dist" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:2em;"/>meters
+        <input value="3" name="dist" id="dist" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:2em;"/>meters
         </p>
         
     </div>
     
-    <select name="listbox" id="listedata" size="8" onclick="listboxresult()">  
+    <select name="listbox" id="listedata" size="8">  
         
         <optgroup label="FLUO">
             <option value=2600>KINOFLO 4T 120</option>
@@ -229,9 +229,9 @@
     </select>
 
 
-<!-- 
+
 <input type="button" class="button" id="but1" value="calculate" onclick="listboxresult()">
--->
+
     
 <div class="zebi" id="display"></div>
 
