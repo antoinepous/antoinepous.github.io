@@ -74,6 +74,9 @@ select {
     padding: 5px;
     border-width: 2px;
     border-radius: 10px;
+    -moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
     
 }
 
@@ -96,8 +99,10 @@ option {
     display: block;
     border-radius: 10px;
     background-color: white;
-
     text-decoration: none;
+    -moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
 }
 
 .button:active {
