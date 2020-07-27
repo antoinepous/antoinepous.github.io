@@ -69,11 +69,14 @@ select {
     margin-top:0.5em;
     margin-bottom: 1em;
     border-color: white; 
-    background-color: rgb(35,60,75);
+    background: none;
     padding: 5px;
     border-width: 2px;
     border-radius: 10px;
-    -webkit-appearance:caret; 
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    appearance: none;
+    
     
 }
 
