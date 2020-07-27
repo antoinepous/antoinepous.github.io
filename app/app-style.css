@@ -23,7 +23,6 @@ body {
 }
 
 input {
-  
     color: white;
     text-decoration: none;
     background: none;
@@ -38,17 +37,16 @@ input {
     border-color: white;
     border-style: solid;
     border-radius: 10px;
-    padding: 1px;
-    
+    padding: 1px;  
 }
 
 input:focus {
     outline: none;
-    
 }
 
 select:focus {
     outline: none;
+    cursor: pointer;
 }
 
 ::placeholder {
@@ -81,7 +79,10 @@ select {
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
     background-size: 12px;
     background-position: calc(100% - 15px) calc(100% - 8px);
-    
+}
+
+.select:hover {
+    cursor: pointer;
 }
 
 option {
@@ -89,7 +90,6 @@ option {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
 }
-
 
 .button {
     text-align: center;
@@ -113,8 +113,11 @@ option {
     opacity: 0.5;
 }
 
+.button:hover {
+    cursor: pointer;
+}
 
-.zebi {
+.display {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
 	font-size: 3em; 
@@ -125,9 +128,18 @@ option {
     margin-top: 0.5em;
     margin-bottom: 1em;
     text-align: center;  
-    border: solid;
-    border-width: 3px;
-    border-color: white;
-    border-radius: 15px;
-    width: 4em;
+}
+
+.credits {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+	font-size: 0.8em; 
+    color: white;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 1em;
+    position: absolute;
+    width: 100%;
+    text-align: center;
+
 }
