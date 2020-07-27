@@ -1,11 +1,15 @@
 let inputIso = document.getElementById("fps");
 let isoValue = "24";
-
 inputIso.addEventListener('input', updateValueIso);
 
 let inputFps = document.getElementById("iso");
 let fpsValue = "800";
 inputFps.addEventListener('input', updateValueFps);
+
+let inputDist = document.getElementById("dist");
+let distValue = "1";
+inputDist.addEventListener('input', updateValueDist);
+
 
 function updateValueFps(f) {
   fpsValue = f.target.value;
@@ -15,51 +19,53 @@ function updateValueIso(e) {
   isoValue = e.target.value;
 }
 
+function updateValueDist(w) {
+    distValue = w.target.value;
+}
+
 function listboxresult() {
 
   function round(x,y) {
     return parseFloat(Number.parseFloat(x).toFixed(y));
-  }
+    }
+    let select = document.getElementById("listedata");
+    let dataLightValue = select.options[select.selectedIndex].value;
+    let dataLight = parseInt(dataLightValue, 10);
+    let iso = parseInt(fpsValue, 10);
+    let fps = parseInt(isoValue, 10);
+    let dist = parseFloat(distValue, 10);
 
-  let select = document.getElementById("listedata");
-  let dataLightValue = select.options[select.selectedIndex].value;
-  let dataLight = parseInt(dataLightValue, 10);
-  let iso = parseInt(fpsValue, 10);
-  let fps = parseInt(isoValue, 10);
+    //let e1 = dataLight * (1 ** 2);
+    //let e2 = round(e1/4, 0);
+    //let e3 = round(e1/9, 0);
+    //let e4 = round(e1/(4 ** 2), 0);
+    //let e5 = round(e1/25, 0);
+    //let e10 = round(e1/100, 0);
+    //let e20 = round(e1/(20 ** 2), 0);
+    //let e50 = round(e1/(50 ** 2),0);
 
-  let e1 = dataLight * (1 ** 2);
+    //let val = [];
+    //let app = [];
+    //const dis = [1, 2, 3, 4, 5, 10, 20, 50];
+    //let lux = [e1, e2, e3, e4, e5, e10, e20, e50];
+    
+    let e = round(dataLight / (dist ** 2), 0);
+    let t = 1 / (fps * 2);
 
-  
-  let e2 = round(e1/4, 0);
-  let e3 = round(e1/9, 0);
-  let e4 = round(e1/(4 ** 2), 0);
-  let e5 = round(e1/25, 0);
-  let e10 = round(e1/100, 0);
-  let e20 = round(e1/(20 ** 2), 0);
-  let e50 = round(e1/(50 ** 2),0);
-
-  let val = [];
-  let app = [];
-  const dis = [1, 2, 3, 4, 5, 10, 20, 50];
-  let lux = [e1, e2, e3, e4, e5, e10, e20, e50];
-  let t = 1 / (fps * 2);
-
-
-
-
-
-  for (let i = 0; i < lux.length; i++){
-    let n = round(Math.sqrt(lux[i] * t * (iso/ 270)), 1); 
-    val.push(n);
-  }
-
-  const all_diaph = [0, 0.3, 0.5, 0.7, 1.0, 1.1, 1.2, 1.4, 1.6, 1.7, 1.8,
+    //for (let i = 0; i < lux.length; i++){
+    //    let n = round(Math.sqrt(lux[i] * t * (iso/ 270)), 1); 
+    //    val.push(n);
+    //}
+    
+    let val = round(Math.sqrt(e * t * (iso/ 270)), 1);
+    
+    const all_diaph = [0, 0.3, 0.5, 0.7, 1.0, 1.1, 1.2, 1.4, 1.6, 1.7, 1.8,
                  2, 2.2, 2.4, 2.5, 2.8, 3.2, 3.3, 3.5, 4, 4.5, 4.8,
                  5, 5.6, 6.3, 6.7, 7.1, 8, 9, 9.5, 10, 11, 13,
                  14, 16, 18, 19, 20, 22, 25.3, 27, 28.7,
                  32, 38.5, 45, 54.5, 64];
 
-  const conv = {
+    const conv = {
             0: "0",
             1: "1",
             1.4: "1.4",
@@ -112,9 +118,42 @@ function listboxresult() {
             20.0: "22 - 1/3",
             28.7: "32 - 1/3",
             };
+    
+    let app = 0
+    
+    if (all_diaph.includes(val) == true){
+            app = val;   
+        }
+    
+    else if (val > 64.0) {
+            app = "overex";  
+        }
+    
+    else {
+            let j = 0;
+            while ((j+1) < all_diaph.length) {
+                if (all_diaph[j] < val && val < all_diaph[j + 1]) {
+                  let m = ((all_diaph[j] + all_diaph[j + 1]) / 2);
+                  if (val <= m) {
+                    app = all_diaph[j];
+                  }
+                  else {
+                    app = all_diaph[j + 1];
+                  }
+                  break;
+                }
+                else {
+                  j++
+                }
+            }
+        }
+    
+    let litteral = conv[app]
+    
+    document.getElementById("display").innerHTML = litteral;
 
-
-  for (let k = 0; k < val.length; k++) {
+    /*
+    for (let k = 0; k < val.length; k++) {
     
     let i = val[k];
 
@@ -169,6 +208,8 @@ function listboxresult() {
     document.getElementById("ecl20").innerHTML = lux[5] + " lx";
     document.getElementById("ecl30").innerHTML = lux[6] + " lx";
     document.getElementById("ecl50").innerHTML = lux[7] + " lx";
+    */
+    
     
  
     

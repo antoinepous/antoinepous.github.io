@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/app/app-style.css" media="all" type="text/css"/>
+    <link rel="stylesheet" href="app-style.css" media="all" type="text/css"/>
     <title>Photometrics</title>
     
 </head>
@@ -13,20 +13,22 @@
 <div class="root">
     <h1 class="titre">photometric database 1.8</h1>
 
-
-    <p><input placeholder="24 fps" name="fps" id="fps" class="label" inputmode="numeric" pattern="[0-9]*" type="tel"/></p>
-    <p><input placeholder="800 iso" name="iso" id="iso" class="label" inputmode="numeric" pattern="[0-9]*" type="tel"/></p>
-
+    <div class="input">
+        <p><input placeholder="24" name="fps" id="fps" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:2em;"/>fps
     
-    <select name="listbox" id="listedata" size="1" class="listbox">
+        <input placeholder="800" name="iso" id="iso" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:3em;"/>iso
+            
+        <input placeholder="3" name="dist" id="dist" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:2em;"/>meters
+        </p>
         
-        <option value=0> Please choose a light </option>
+    </div>
+    
+    <select name="listbox" id="listedata" size="8" onclick="listboxresult()">  
         
         <optgroup label="FLUO">
             <option value=2600>KINOFLO 4T 120</option>
             <option value=966>KINOFLO 4T 60</option>
         </optgroup>
-        
         <optgroup label="HMI">
             <option value=995000>ARRIMAX 18 Flood</option>
             <option value=9310047>ARRIMAX 18 Spot</option>
@@ -91,7 +93,6 @@
             <option value=40950>Broncolor F800 Lentille F</option>
             <option value=87633>Broncolor F1600 Lentille F</option>
         </optgroup>
-
         <optgroup label="LED">
             <option value=223>A Lite</option>
             <option value=80>EYE Lite</option>
@@ -201,7 +202,6 @@
             <option value=5526>Gemini 1x1 5600K</option>
             <option value=5012>Gemini 1x1 3200K</option>
         </optgroup>
-        
         <optgroup label="TH">
             <option value=3250>Desisti 300W Flood</option>
             <option value=27000>Desisti 300W Spot</option>
@@ -226,22 +226,18 @@
             <option value=1800>Keylite BoulChi 1kW 1/2</option>
             <option value=6300>Keylite BoulChi 5kW 1/2</option> 
         </optgroup>
-    
     </select>
-  
 
-<br>
-    
+
+<!-- 
 <input type="button" class="button" id="but1" value="calculate" onclick="listboxresult()">
+-->
     
-<br>
-    
-<span id="resultConversion" class="label"></span>
+<div class="zebi" id="display"></div>
 
 
-    
+<!--
 <table class="table">
-    
     <colgroup>
         <col style="width: 6em">
         <col style="width: 6em">
@@ -287,14 +283,13 @@
         <td>50 m</td>
         <td id="ecl50"></td>
         <td id="50"></td>
-    </tr>
-    
-    
-    
+    </tr> 
 </table>
+-->
+    
     
 </div>
-<script src="/app/script.js"></script>
+<script src="script.js"></script>
 </body>
 
 

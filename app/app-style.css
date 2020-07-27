@@ -11,59 +11,90 @@ body {
 	line-height: 1.2; 
 }
 
-.label {
-	font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-	font-size: 1em;
-	color: black;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 0px;
-    border-radius: 0px;
-    padding: 0.3em;
-    width: 6em;
+.input {
     text-align: center;
-}
-
-.root {
-
-}
-
-.listbox {
-    display: block;
+    margin-right: 5%;
+    margin-left: 1%;
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-	font-size: 1em;
-    color: rgb(30,60,80);
+    font-weight: 600;
+	font-size: 22px;
+    color: white;
+    
+}
+
+input {
+    border: none;
+    color: white;
+    text-decoration: none;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+	font-size: 22px;
+    padding: 0.3em;
+    text-align: right;
+    margin-left: 0em;
+    margin-right: 0em;
+    
+}
+
+input:focus {
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+}
+
+::placeholder {
+  color: white;
+  opacity: 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+select {
+    display: block;
+	font-size: 18px;
+    color: white;
     text-align: left;
     margin: 0;
     width: 18em;
     margin-left: auto;
     margin-right: auto;
-    border: 0;
-    border-radius: 0;
-    
+    margin-top:0.5em;
+    margin-bottom: 1em;
+    border-color: white;
+    border-radius: 0px; 
+    background : none;
+    padding: 5px;
+}
+
+option {
+    padding: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500
+}
+
+option:checked {
+    box-shadow: 0 0 10px 100px #FFFFFF inset;
 }
 
 .button {
     display: block;
     font-family: 'Roboto', sans-serif;
-    color: rgb(30,60,80);
+    color: rgb(35,60,75);
     font-size: 1em;
-    font-weight: 500;
-    max-width: 100%;
+    font-weight: 600;
+    width: 5em;
     margin-left: auto;
     margin-right: auto;
-    border: 0;
-    border-radius: 0;
+    border: none;
+    border-radius: none;
+    margin-top:0.5em;
+    margin-bottom: 0.5em;
+    background-color: white
 }
 
-.button:hover {
-    background: rgb(200,200,200);
-  
-
-}
 
 .table {
     font-family: 'Roboto', sans-serif;
@@ -80,6 +111,19 @@ body {
     border: 1px solid;
     border-collapse: collapse;
     border-color: white;
-    
+}
 
+.zebi {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+	font-size: 2em; 
+    color: white;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    
+    
 }
