@@ -7,6 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app-style.css" media="all" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Photometrics</title>
     
 </head>
@@ -14,15 +15,59 @@
 <div>
     <h1 class="titre">photometric database</h1>
 
-    <div class="input">
-        <p><input value="24" name="fps" id="fps" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:2em;"/>fps
+    <div class="container">
     
-        <input value="800" name="iso" id="iso" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:3em;"/>iso
+        <div>
+           
+            <div class="label">fps</div>
             
-        <input value="3" name="dist" id="dist" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:2em;"/>meters
-        </p>
+            <div class="label">iso</div>
+            
+            <div class="label">meters</div>
+            
+        </div>
+        
+        <div class="plus">
+            
+            <button class="button" onclick="plusFps()"><i class="material-icons md-light">add_circle</i></button>
+            
+            <div><i class="material-icons md-light">add_circle</i></div>
+            
+            <div><i class="material-icons md-light">add_circle</i></div>
+            
+        </div>
+        
+        <div class="value">
+        
+            <input name="fps" id="fps" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:3em;"/>
+            
+            <input name="iso" id="iso" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:3em;"/>
+        
+            <input name="dist" id="dist" inputmode="numeric" pattern="[0-9]*" type="tel" style="width:3em;"/>
+            
+        </div>
+        
+        <div class="minus">
+        
+            <div>
+            <i class="material-icons md-light">remove_circle</i>
+            </div>
+        
+            <div>
+            <i class="material-icons md-light">remove_circle</i>
+            </div>
+            
+            <div>
+            <i class="material-icons md-light">remove_circle</i>
+            </div>
+
+        </div>
         
     </div>
+    
+
+
+
     
     <select name="listbox" id="listedata" size="1">  
         <option>please select a light</option>
@@ -231,7 +276,7 @@
 
 
 
-    <input type="button" class="button" id="but1" value="calculate" onclick="listboxresult()">
+    <input type="button" class="button_calculate" id="but1" value="calculate" onclick="listboxresult()">
 
 
     <div class="display" id="display"></div>

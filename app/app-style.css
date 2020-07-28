@@ -11,15 +11,38 @@ body {
 	line-height: 1.2; 
 }
 
-.input {
-    text-align: center;
+.container {
     margin-right: auto;
     margin-left: auto;
+    display: block;
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 	font-size: 20px;
     color: white;
-    
+    column-count: 4;
+    text-align: center;
+    width: 12em;
+    line-height: 2.2em;
+}
+
+.label {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    text-align: center;
+}
+
+.plus {
+    position: relative;
+    left: 20px;
+}
+
+.value {
+    text-align: center;
+}
+
+.minus {
+    position: relative;
+    right: 0px;
 }
 
 input {
@@ -29,15 +52,14 @@ input {
     font-family: 'Roboto', sans-serif;
     font-weight: 600;
 	font-size: 20px;
-    padding: 0.3em;
     text-align: center;
-    margin-left: 0.5em;
-    margin-right: 0.3em;
     border-width: 2px;
     border-color: white;
     border-style: solid;
     border-radius: 10px;
-    padding: 1px;  
+    padding: 1px;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
 }
 
 input:focus {
@@ -92,6 +114,16 @@ option {
 }
 
 .button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+.button_calculate {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: rgb(35,60,75);
@@ -109,11 +141,11 @@ option {
 	appearance: none;
 }
 
-.button:active {
+.button_calculate:active {
     opacity: 0.5;
 }
 
-.button:hover {
+.button_calculate:hover {
     cursor: pointer;
 }
 
@@ -141,5 +173,13 @@ option {
     position: absolute;
     width: 100%;
     text-align: center;
-
 }
+
+.material-icons.md-light { 
+    color: rgba(255, 255, 255, 1);
+    font-size: 28px;
+    position: relative;
+    top: 5px;
+    bottom: 0px;
+}
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }

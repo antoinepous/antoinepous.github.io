@@ -7,9 +7,22 @@ let fpsValue = "800";
 inputFps.addEventListener('input', updateValueFps);
 
 let inputDist = document.getElementById("dist");
-let distValue = "1";
+let distValue = "3";
 inputDist.addEventListener('input', updateValueDist);
 
+document.getElementById("fps").value = "24";
+document.getElementById("iso").value = "800";
+document.getElementById("dist").value = "3";
+
+function plusFps() {
+    isoValue = parseInt(isoValue) + 1;
+    document.getElementById('fps').value= isoValue;
+}
+
+function minusFps() {
+    isoValue = parseInt(isoValue) - 1;
+    document.getElementById('fps').value= isoValue;
+}
 
 function updateValueFps(f) {
   fpsValue = f.target.value;
