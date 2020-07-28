@@ -27,7 +27,6 @@ body {
 	font-size: 20px;
     color: white;
     column-count: 4;
-
     text-align: center;
     width: 100%;
     line-height: 2.2em;
@@ -38,24 +37,21 @@ body {
     margin-bottom: 0em;
     text-align: left;
     font-size: 24px;
+    margin-left: 1.5em;
 }
 
 .plus {
     position: relative;
-
-    left: 15px;
+    left: 1em;
 }
 
 .value {
-
     position: relative;
-    left: 15px;
 }
 
 .minus {
     position: relative;
-    left: 15px;
-
+    right: 1em;
 }
 
 input {
@@ -73,7 +69,6 @@ input {
     padding: 1px;
     margin-bottom: 0.1em;
     margin-top: 0.1em;
-    
 }
 
 input:focus {
@@ -111,7 +106,6 @@ select {
     -moz-appearance: none;
     -webkit-appearance:none;
     appearance: none;
-    text-decoration: none;
     background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
     background-size: 12px;
     background-position: calc(100% - 15px) calc(100% - 8px);
@@ -132,10 +126,9 @@ option {
     border: none;
     cursor: pointer;
     border-radius: 100px;
-    width: 3em;
     padding-top: 0px;
     padding-bottom: 7px;
-    
+    margin-top: 2px;
 }
 
 button:focus {
@@ -186,10 +179,9 @@ button:focus {
     font-weight: 400;
 	font-size: 0.8em; 
     color: white;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     margin-bottom: 1em;
-    position: absolute;
     width: 100%;
     text-align: center;
 }

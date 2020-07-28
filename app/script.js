@@ -11,6 +11,8 @@ function updateValueFps(e) {
     };
 }
 
+let iso = ["100", "125", "160", "200", "250", "320", "400", "500", "640", "800", "1000", "1250", "1600", "2000", "2500", "3200", "4000", "5000", "6400", "8000", "10000", "12800", "16000", "20000", "25600"]
+
 let isoValue = document.getElementById("iso").value = "800";
 let isoInput = document.getElementById("iso");
 isoInput.addEventListener('input', updateValueIso);
@@ -38,13 +40,23 @@ function minusFps() {
     document.getElementById('fps').value = fpsValue;
 }
 
+let j = 9;
+
 function plusIso() {
-    isoValue = isoValue * 2;
+    j = j+1;
+    if (j > 24) {
+        j = 24;
+    }
+    isoValue = iso[j];
     document.getElementById('iso').value= isoValue;
 }
 
 function minusIso() {
-    isoValue = isoValue / 2;
+    j = j-1;
+    if (j < 0) {
+        j = 0;
+    }
+    isoValue = iso[j];
     document.getElementById('iso').value= isoValue;
 }
 
