@@ -5,10 +5,11 @@ body {
 .titre {
 	font-family: 'Roboto', sans-serif; 
 	font-weight: 900;
-	font-size: 2em; 
+	font-size: 2.7em; 
 	text-align: center; 
 	color: white; 
-	line-height: 1.2; 
+	margin-bottom: 0.5em;
+    margin-top: 1em;
 }
 
 .container {
@@ -28,7 +29,8 @@ body {
 .label {
     margin-top: 0em;
     margin-bottom: 0em;
-    text-align: center;
+    text-align: left;
+    font-size: 24px;
 }
 
 .plus {
@@ -85,7 +87,7 @@ select {
 	font-size: 18px;
     color: white;
     text-align: left;
-    width: 18em;
+    width: 17em;
     margin-left: auto;
     margin-right: auto;
     margin-top:0.5em;
@@ -117,6 +119,11 @@ option {
     background: none;
     border: none;
     cursor: pointer;
+    border-radius: 100px;
+    width: 3em;
+    padding-top: 0px;
+    padding-bottom: 7px;
+    
 }
 
 button:focus {

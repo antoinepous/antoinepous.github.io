@@ -1,39 +1,65 @@
-let inputIso = document.getElementById("fps");
-let isoValue = "24";
-inputIso.addEventListener('input', updateValueIso);
+let fpsValue = document.getElementById("fps").value = "24";
+let fpsInput = document.getElementById("fps");
+fpsInput.addEventListener('input', updateValueFps);
+function updateValueFps(e) { 
+    fpsValue = e.target.value;
+    if (parseInt(fpsValue, 10) < 1) {
+        document.getElementById("fps").value = "1"
+    };
+    if (fpsValue == "") {
+        document.getElementById("fps").value = "1"
+    };
+}
 
-let inputFps = document.getElementById("iso");
-let fpsValue = "800";
-inputFps.addEventListener('input', updateValueFps);
+let isoValue = document.getElementById("iso").value = "800";
+let isoInput = document.getElementById("iso");
+isoInput.addEventListener('input', updateValueIso);
+function updateValueIso(e) { isoValue = e.target.value; }
 
-let inputDist = document.getElementById("dist");
-let distValue = "3";
-inputDist.addEventListener('input', updateValueDist);
+let distValue = document.getElementById("dist").value = "3";
+let distInput = document.getElementById("dist");
+distInput.addEventListener('input', updateValueDist);
+function updateValueDist(e) { distValue = e.target.value; }
 
-document.getElementById("fps").value = "24";
-document.getElementById("iso").value = "800";
-document.getElementById("dist").value = "3";
+if (parseInt(fpsValue, 10) < 1) {
+    document.getElementById("fps").value = "1";
+}
 
 function plusFps() {
-    isoValue = parseInt(isoValue) + 1;
-    document.getElementById('fps').value= isoValue;
+    fpsValue = parseInt(fpsValue, 10) + 1;
+    document.getElementById('fps').value= fpsValue;
 }
 
 function minusFps() {
-    isoValue = parseInt(isoValue) - 1;
-    document.getElementById('fps').value= isoValue;
+    fpsValue = parseInt(fpsValue, 10) - 1;
+    if (fpsValue < 1) {
+        fpsValue = 1;
+    }
+    document.getElementById('fps').value = fpsValue;
 }
 
-function updateValueFps(f) {
-  fpsValue = f.target.value;
+function plusIso() {
+    isoValue = isoValue * 2;
+    document.getElementById('iso').value= isoValue;
 }
 
-function updateValueIso(e) {
-  isoValue = e.target.value;
+function minusIso() {
+    isoValue = isoValue / 2;
+    document.getElementById('iso').value= isoValue;
 }
 
-function updateValueDist(w) {
-    distValue = w.target.value;
+function plusDist() {
+    distValue = distValue + 1;
+    document.getElementById('dist').value= distValue;
+
+}
+
+function minusDist() {
+    distValue = distValue - 1;
+    if (distValue < 0) {
+        distValue = 0;
+    }
+    document.getElementById('dist').value= distValue;
 }
 
 function listboxresult() {
@@ -44,8 +70,8 @@ function listboxresult() {
     let select = document.getElementById("listedata");
     let dataLightValue = select.options[select.selectedIndex].value;
     let dataLight = parseInt(dataLightValue, 10);
-    let iso = parseInt(fpsValue, 10);
-    let fps = parseInt(isoValue, 10);
+    let iso = parseInt(isoValue, 10);
+    let fps = parseInt(fpsValue, 10);
     let dist = parseFloat(distValue, 10);
 
     //let e1 = dataLight * (1 ** 2);
