@@ -42,16 +42,19 @@ body {
 
 .plus {
     position: relative;
-    text-align: right;
+
+    left: 15px;
 }
 
 .value {
     text-align: center;
+    position: relative;
+    left: 15px;
 }
 
 .minus {
     position: relative;
-    text-align: left;
+    left: 15px;
 
 }
 
@@ -70,6 +73,7 @@ input {
     padding: 1px;
     margin-bottom: 0.1em;
     margin-top: 0.1em;
+    
 }
 
 input:focus {
@@ -95,7 +99,7 @@ select {
 	font-size: 18px;
     color: white;
     text-align: left;
-    width: 17em;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     margin-top:0.5em;
