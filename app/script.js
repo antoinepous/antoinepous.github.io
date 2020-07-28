@@ -61,13 +61,13 @@ function minusIso() {
 }
 
 function plusDist() {
-    distValue = distValue + 1;
+    distValue = parseInt(distValue, 10) + 1;
     document.getElementById('dist').value= distValue;
 
 }
 
 function minusDist() {
-    distValue = distValue - 1;
+    distValue = parseInt(distValue, 10) - 1;
     if (distValue < 0) {
         distValue = 0;
     }
