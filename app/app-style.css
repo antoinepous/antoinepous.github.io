@@ -2,13 +2,19 @@ body {
     background-color:rgb(35,60,75);
 }
 
+.window {
+    margin: auto;
+    width: 20em;
+    text-align: center;
+}
+
 .titre {
 	font-family: 'Roboto', sans-serif; 
 	font-weight: 900;
-	font-size: 2.7em; 
+	font-size: 2em; 
 	text-align: center; 
 	color: white; 
-	margin-bottom: 0.5em;
+	margin-bottom: 1em;
     margin-top: 1em;
 }
 
@@ -21,8 +27,9 @@ body {
 	font-size: 20px;
     color: white;
     column-count: 4;
+
     text-align: center;
-    width: 12em;
+    width: 100%;
     line-height: 2.2em;
 }
 
@@ -35,7 +42,7 @@ body {
 
 .plus {
     position: relative;
-    left: 20px;
+    text-align: right;
 }
 
 .value {
@@ -44,7 +51,8 @@ body {
 
 .minus {
     position: relative;
-    right: 0px;
+    text-align: left;
+
 }
 
 input {
