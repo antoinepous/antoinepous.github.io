@@ -16,6 +16,7 @@ body {
 	color: white; 
 	margin-bottom: 1em;
     margin-top: 1em;
+    max-width: 100%;
 }
 
 .container {
