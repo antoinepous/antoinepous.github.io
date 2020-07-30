@@ -1,38 +1,41 @@
-let fpsValue = document.getElementById("fps").value = "24";
-let fpsInput = document.getElementById("fps");
-fpsInput.addEventListener('input', updateValueFps);
-function updateValueFps(e) { 
+var fpsValue = document.getElementById("fps").value = "24";
+var fpsInput = document.getElementById("fps");
+
+var isoValue = document.getElementById("iso").value = "800";
+var isoInput = document.getElementById("iso");
+
+var distValue = document.getElementById("dist").value = "3";
+var distInput = document.getElementById("dist");
+
+function updateValueFps(e) {
+    "use strict";
     fpsValue = e.target.value;
-    if (parseInt(fpsValue, 10) < 1) {
-        document.getElementById("fps").value = "1"
-    };
-    if (fpsValue == "") {
-        document.getElementById("fps").value = "1"
-    };
+    if (parseInt(fpsValue, 10) < 1) {document.getElementById("fps").value = "1"; }
+    if (fpsValue === "") { document.getElementById("fps").value = "1"; }
 }
+function updateValueIso(e) { "use strict"; isoValue = e.target.value; }
+function updateValueDist(e) { "use strict"; distValue = e.target.value; }
 
-let iso = ["100", "125", "160", "200", "250", "320", "400", "500", "640", "800", "1000", "1250", "1600", "2000", "2500", "3200", "4000", "5000", "6400", "8000", "10000", "12800", "16000", "20000", "25600"]
+fpsInput.addEventListener('input', updateValueFps);
 
-let isoValue = document.getElementById("iso").value = "800";
-let isoInput = document.getElementById("iso");
+var iso = ["100", "125", "160", "200", "250", "320", "400", "500", "640", "800", "1000", "1250", "1600", "2000", "2500", "3200", "4000", "5000", "6400", "8000", "10000", "12800", "16000", "20000", "25600"];
+
 isoInput.addEventListener('input', updateValueIso);
-function updateValueIso(e) { isoValue = e.target.value; }
 
-let distValue = document.getElementById("dist").value = "3";
-let distInput = document.getElementById("dist");
 distInput.addEventListener('input', updateValueDist);
-function updateValueDist(e) { distValue = e.target.value; }
 
 if (parseInt(fpsValue, 10) < 1) {
     document.getElementById("fps").value = "1";
 }
 
 function plusFps() {
+    "use strict";
     fpsValue = parseInt(fpsValue, 10) + 1;
-    document.getElementById('fps').value= fpsValue;
+    document.getElementById('fps').value = fpsValue;
 }
 
 function minusFps() {
+    "use strict";
     fpsValue = parseInt(fpsValue, 10) - 1;
     if (fpsValue < 1) {
         fpsValue = 1;
@@ -40,51 +43,57 @@ function minusFps() {
     document.getElementById('fps').value = fpsValue;
 }
 
-let j = 9;
+var j = 9;
 
 function plusIso() {
-    j = j+1;
+    "use strict";
+    j = j + 1;
     if (j > 24) {
         j = 24;
     }
     isoValue = iso[j];
-    document.getElementById('iso').value= isoValue;
+    document.getElementById('iso').value = isoValue;
 }
 
 function minusIso() {
-    j = j-1;
+    "use strict";
+    j = j - 1;
     if (j < 0) {
         j = 0;
     }
     isoValue = iso[j];
-    document.getElementById('iso').value= isoValue;
+    document.getElementById('iso').value = isoValue;
 }
 
 function plusDist() {
+    "use strict";
     distValue = parseInt(distValue, 10) + 1;
-    document.getElementById('dist').value= distValue;
+    document.getElementById('dist').value = distValue;
 
 }
 
 function minusDist() {
+    "use strict";
     distValue = parseInt(distValue, 10) - 1;
     if (distValue < 0) {
         distValue = 0;
     }
-    document.getElementById('dist').value= distValue;
+    document.getElementById('dist').value = distValue;
 }
 
 function listboxresult() {
-
-  function round(x,y) {
-    return parseFloat(Number.parseFloat(x).toFixed(y));
+    "use strict";
+    function round(x, y) { return parseFloat(Number.parseFloat(x).toFixed(y)); }
+    var dataLightValue = document.getElementById("listedata").options[document.getElementById("listedata").selectedIndex].value;
+    if (dataLightValue == 0) {
+        alert("You have not selected any light !");
     }
-    let select = document.getElementById("listedata");
-    let dataLightValue = select.options[select.selectedIndex].value;
-    let dataLight = parseInt(dataLightValue, 10);
-    let iso = parseInt(isoValue, 10);
-    let fps = parseInt(fpsValue, 10);
-    let dist = parseFloat(distValue, 10);
+    
+    else {
+    var dataLight = parseInt(dataLightValue, 10);
+    var iso = parseInt(isoValue, 10);
+    var fps = parseInt(fpsValue, 10);
+    var dist = parseFloat(distValue, 10);
 
     //let e1 = dataLight * (1 ** 2);
     //let e2 = round(e1/4, 0);
@@ -100,15 +109,15 @@ function listboxresult() {
     //const dis = [1, 2, 3, 4, 5, 10, 20, 50];
     //let lux = [e1, e2, e3, e4, e5, e10, e20, e50];
     
-    let e = round(dataLight / (dist ** 2), 0);
-    let t = 1 / (fps * 2);
+    var e = round(dataLight / (dist ** 2), 0);
+    var t = 1 / (fps * 2);
 
     //for (let i = 0; i < lux.length; i++){
     //    let n = round(Math.sqrt(lux[i] * t * (iso/ 270)), 1); 
     //    val.push(n);
     //}
     
-    let val = round(Math.sqrt(e * t * (iso/ 270)), 1);
+    var val = round(Math.sqrt(e * t * (iso/ 270)), 1);
     
     const all_diaph = [0, 0.3, 0.5, 0.7, 1.0, 1.1, 1.2, 1.4, 1.6, 1.7, 1.8,
                  2, 2.2, 2.4, 2.5, 2.8, 3.2, 3.3, 3.5, 4, 4.5, 4.8,
@@ -170,7 +179,7 @@ function listboxresult() {
             28.7: "32 <small>-1/3</small>",
             };
     
-    let app = 0
+    var app = 0
     
     if (all_diaph.includes(val) == true){
             app = val;   
@@ -199,10 +208,10 @@ function listboxresult() {
             }
         }
     
-    let litteral = conv[app]
+    var litteral = conv[app]
     
     document.getElementById("display").innerHTML = litteral;
-
+    }
     /*
     for (let k = 0; k < val.length; k++) {
     
