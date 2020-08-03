@@ -1,121 +1,129 @@
+body {	
+    padding-top: 1rem;
+    padding-bottom: 3rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    color: rgb(30,30,30);
+}
 
-			body {
-				
-				padding-top: 1rem;
-				padding-bottom: 3rem;
-				padding-left: 0rem;
-				padding-right: 0rem;
-				color: rgb(70,70,70);
-				font-size:16px;
-				font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif; 
-				font-weight: all
-			}
+.year {          
+    position: relative;
+    font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif;
+    font-weight: 900;
+    font-size: 4em;
+    padding-left: 0.4em;
+    color: rgb(30,30,30);
 
-			.annee {          	
-            	margin-bottom: 0rem;
-            	margin-left: 1rem;
-            	width: 70px;
-            }
+}
 
-            #horizontal { 
-            	list-style: none;
-            	text-align: center;
-            	padding-right: 1rem;
-            	padding-left: 0rem;
-            	margin-top: 1rem;
-            }
+#horizontal { 
+    list-style: none;
+    text-align: center;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    margin-top: 1rem;
+    font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif;
+    font-weight: 100;
+    font-size: 1.3em;
+    color: rgb(30,30,30);
+}
 
-            #horizontal li {
-            	display: inline-block;
-            	padding-left: 1em;   	
-            }
+#horizontal li {
+    display: inline-block;
+    text-align: center;
+    padding-left: 0.3em;
+    padding-right: 0.3em;
+}
 
-            .menu {
-            	text-decoration: none;
-            	color: rgb(0,0,0);
-            }
+.menu {
+    text-decoration: none;
+    color: rgb(0,0,0);
+}
 
-            .menu:hover {
-            	text-decoration: none;
-            	color: rgb(150,150,150);
-            }
+.menu:hover {
+    text-decoration: none;
+    color: rgb(150,150,150);
+}
 
-            .logo {
-				max-width: 100%; 
-				height: auto;
-				text-align: center;
-			}
-            
-            @media (min-width: 1080px) {
+.logo {
+    max-width: 100%; 
+    height: auto;
+    text-align: center;
+}
 
-            	.cv {
-            	width: 50rem;
-            	}
+#vertical li{
+    margin-bottom: 1em;
+    border: solid;
+    padding: 0.5em;
+    border-width: 2px;
+}
 
-            	.text {            	
-            	text-align:justify; 
-            	
-   				padding-left:0rem;
-				margin-right:1rem;
-				line-height: 150%;			
-   				}
-   			}
+@media (min-width: 1080px) {
 
-			@media (max-device-width: 1080px) {
-				.text {
-            	
-            	text-align:justify; 
-   				width:auto;
-   				padding-left:0rem;
-				margin-right:1rem;
-				line-height: 130%;				
-   				}
-   			}
+.text {            	
+    text-align:justify; 
+    width: 100%;
+    font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif; 
+    font-size: 24px;
+    line-height: 150%;
+    padding-left: 11em;
+    list-style: none;
+}
+}
+
+@media (max-device-width: 1080px) {
+.text {
+    font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif; 
+    text-align:justify; 
+    font-size: 24px;
+    width: 100%;
+    line-height: 100%;
+    padding-right: 1em;
+    padding-left: 1em;
+    list-style: none;
+}
+}
           
-            @media (max-width: 1080px) {
-            	.text {
-            	
-            	text-align:justify; 
-   				width:auto;
-   				padding-left:0rem;
-				margin-right:1rem;
-				line-height: 150%;
-				}				
-   			}
+@media (max-width: 1080px) {
+.text {
+    font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif; 
+    text-align:justify; 
+    font-size: 24px;
+    line-height: 100%;
+    width: 100%;
+    padding-right: 1em;
+    padding-left: 1em;
+    list-style: none;
+}				
+}
             
-            .row {
-                
-                padding-left: 0.5rem;
-                padding-right: 0.5rem;
+.row {              
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}	
 
+.col-sm-4 {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0rem;
+    padding-right: -3rem;
+}
 
-            }	
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 0px;
+}
 
-            .col-sm-4 {
-            	padding-top: 0.5rem;
-            	padding-bottom: 0.5rem;
-            	padding-left: 0rem;
-            	padding-right: -3rem;
-
-
-            }
-
-			.column {
-			  	float: left;
-			  	width: 33.33%;
-			  	padding: 0px;
-			}
-
-			.row::after {
-			  	content: "";
-			  	clear: both;
-			  	display: table;
-			}
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
            
-
-			.column .caption {
-				position: absolute;
-			    bottom: 0;
-			    left: 0;
-			}
+.column .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
 
