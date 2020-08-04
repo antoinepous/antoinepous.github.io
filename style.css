@@ -3,18 +3,39 @@ body {
     padding-bottom: 3rem;
     padding-left: 0rem;
     padding-right: 0rem;
-    color: rgb(30,30,30);
+}
+
+.window {
+    background-color: rgb(20,20,20);
+    color: lightgrey;
 }
 
 .year {          
-    position: relative;
-    font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif;
-    font-weight: 900;
-    font-size: 4em;
-    padding-left: 0.4em;
-    color: rgb(30,30,30);
-
+    font-family: 'Permanent Marker', cursive;
+    font-size: 3rem;
+    margin-bottom: 0rem;
+    margin-top: 0rem;
 }
+
+.text {
+    font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif; 
+    font-size: 20px;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    margin-bottom: 1rem;
+    border: solid;
+    padding: 0.3rem;
+    border-width: 2px;
+    text-align:justify; 
+    line-height: 120%;
+}
+
+.text:hover {
+    width: 99%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
 
 #horizontal { 
     list-style: none;
@@ -23,77 +44,54 @@ body {
     padding-left: 0rem;
     margin-top: 1rem;
     font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif;
-    font-weight: 100;
-    font-size: 1.3em;
-    color: rgb(30,30,30);
+    font-weight: 600;
+    font-size: 1rem;
 }
 
 #horizontal li {
     display: inline-block;
     text-align: center;
-    padding-left: 0.3em;
-    padding-right: 0.3em;
+    padding-left: 0.3rem;
+    padding-right: 0.3rem;
+    
 }
 
 .menu {
     text-decoration: none;
-    color: rgb(0,0,0);
+    color: lightgrey;
 }
 
 .menu:hover {
     text-decoration: none;
-    color: rgb(150,150,150);
+    color: lightseagreen;
 }
 
 .logo {
+    font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif;
     max-width: 100%; 
-    height: auto;
+    letter-spacing: -2px;
     text-align: center;
-}
-
-#vertical li{
-    margin-bottom: 1em;
-    border: solid;
-    padding: 0.5em;
-    border-width: 2px;
+    font-size: 3rem;
+    font-weight: 900;
 }
 
 @media (min-width: 1080px) {
 
-.text {            	
-    text-align:justify; 
-    width: 100%;
-    font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif; 
-    font-size: 24px;
-    line-height: 150%;
-    padding-left: 11em;
-    list-style: none;
-}
-}
+.root {    
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 
-@media (max-device-width: 1080px) {
-.text {
-    font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif; 
-    text-align:justify; 
-    font-size: 24px;
-    width: 100%;
-    line-height: 100%;
-    padding-right: 1em;
-    padding-left: 1em;
-    list-style: none;
 }
 }
-          
+        
 @media (max-width: 1080px) {
-.text {
-    font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif; 
-    text-align:justify; 
-    font-size: 24px;
-    line-height: 100%;
-    width: 100%;
-    padding-right: 1em;
-    padding-left: 1em;
-    list-style: none;
+.root {
+    position: relative;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+
 }				
 }
             
