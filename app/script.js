@@ -276,3 +276,7 @@ function listboxresult() {
     
 
   }
+
+function info() {
+    alert("DISCLAIMER : These data are purely indicative and are available on manufacturers' websites.")
+}

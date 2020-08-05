@@ -33,6 +33,15 @@ body {
     line-height: 2.2em;
 }
 
+.container2{
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    column-count: 2;
+    text-align: right;
+    width: 40%;
+    display: block;
+}
 .label {
     margin-top: 0em;
     margin-bottom: 0em;
@@ -185,6 +194,14 @@ button:focus {
     margin-bottom: 1em;
     width: 100%;
     text-align: center;
+}
+
+.material-icons.md-light.info {
+    color: rgba(255, 255, 255, 1);
+    position: relative;
+    font-size: 28px;
+    top: 1px;
+    left: 10px;
 }
 
 .material-icons.md-light { 
