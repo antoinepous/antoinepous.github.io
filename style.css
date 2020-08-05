@@ -5,16 +5,16 @@ body {
     padding-right: 0rem;
 }
 
-.window {
+.page {
     background-color: rgb(20,20,20);
     color: lightgrey;
 }
 
 .year {          
     font-family: 'Permanent Marker', cursive;
-    font-size: 3rem;
+    font-size: 2.5rem;
     margin-bottom: 0rem;
-    margin-top: 0rem;
+    margin-top: 2rem;
 }
 
 .text {
@@ -23,9 +23,6 @@ body {
     margin-right: 0rem;
     margin-left: 0rem;
     margin-bottom: 1rem;
-    border: solid;
-    padding: 0.3rem;
-    border-width: 2px;
     text-align:justify; 
     line-height: 120%;
 }
@@ -44,8 +41,6 @@ body {
     padding-left: 0rem;
     margin-top: 1rem;
     font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif;
-    font-weight: 600;
-    font-size: 1rem;
 }
 
 #horizontal li {
@@ -53,17 +48,22 @@ body {
     text-align: center;
     padding-left: 0.3rem;
     padding-right: 0.3rem;
-    
+    background-color: lightgray;
+    margin-right: 0rem;
+    margin-left: 0rem;
+    font-weight: 900;
+    font-size: 1rem;
+    letter-spacing: -1px;
 }
 
 .menu {
     text-decoration: none;
-    color: lightgrey;
+    color: rgb(20,20,20);
 }
 
 .menu:hover {
     text-decoration: none;
-    color: lightseagreen;
+    color: rgb(20,20,20);
 }
 
 .logo {
