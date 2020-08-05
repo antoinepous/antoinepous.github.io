@@ -1,5 +1,5 @@
 body {
-    background-color:rgb(35,60,75);
+    background-color:#344955;
 }
 
 .window {
@@ -172,16 +172,27 @@ button:focus {
 }
 
 .display {
+    margin-top: 2rem;
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
 	font-size: 3em; 
     color: white;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0.5em;
-    margin-bottom: 1em;
+    position: relative;
     text-align: center;  
+}
+
+.display .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.display .letter {
+  display: inline-block;
+  line-height: 1em;
 }
 
 .credits {

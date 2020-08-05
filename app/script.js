@@ -212,6 +212,26 @@ function listboxresult() {
     
     document.getElementById("display").innerHTML = litteral;
     }
+    
+    var textWrapper = document.querySelector('.display .letters');
+    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
+
+    anime.timeline({loop: false})
+    .add({
+        targets: '.display .letter',
+        translateY: ["1.1em", 0],
+        translateZ: 0,
+        duration: 750,
+        delay: (el, i) => 50 * i
+    })
+    .add({
+        targets: '.display',
+        opacity: 1,
+        duration: 1000,
+        easing: "easeOutExpo",
+        delay: 1000
+    });
+    
     /*
     for (let k = 0; k < val.length; k++) {
     
@@ -280,3 +300,4 @@ function listboxresult() {
 function info() {
     alert("DISCLAIMER : These data are purely indicative and are available on manufacturers' websites.")
 }
+

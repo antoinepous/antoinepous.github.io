@@ -65,7 +65,7 @@
     
     <select name="listbox" id="listedata" size="1">  
         <option value=0>please select a light</option>
-        <optgroup label="FLUO">
+        <optgroup label="FLUO" >
             <option value=2600>KINOFLO 4T 120</option>
             <option value=966>KINOFLO 4T 60</option>
         </optgroup>
@@ -279,7 +279,12 @@
     </div>
     
     
-    <div class="display" id="display"></div>
+    
+    <div class="display">
+        <span class="text-wrapper">
+            <span class="letters" id="display"></span>
+        </span>
+    </div>
     
   
 
@@ -342,7 +347,9 @@
   <div class="credits">
     version 1.81 - ©2020 Antoine Pous
     </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 <script src="script.js"></script>
+
 </body>
 
 
