@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="app-style.css" media="all" type="text/css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="icon" href="https://www.antoinepous.com/app/favicon.ico" />
+    <link rel="icon" href="http://www.antoinepous.com/app/favicon.ico" />
     <title>photometric database</title>
     
 </head>
@@ -62,6 +62,7 @@
         </div>
         
     </div>
+
     
     <select name="listbox" id="listedata" size="1">  
         <option value=0>please select a light</option>
@@ -241,6 +242,16 @@
             <option value=8155>Gemini 2x1 3200K</option>
             <option value=5526>Gemini 1x1 5600K</option>
             <option value=5012>Gemini 1x1 3200K</option>
+            <option value=256000>Luxed-12</option>
+            <option value=211200>Luxed-9</option>
+            <option value=142400>Luxed-6</option>
+            <option value=99000>Luxed-4</option>
+            <option value=64000>Luxed-3</option>
+            <option value=44000>Luxed-2</option>
+            <option value=24400>Luxed-S</option>
+            
+  
+            
         </optgroup>
         <optgroup label="TH">
             <option value=3250>Desisti 300W Flood</option>
@@ -264,6 +275,10 @@
             <option value=421100>Desisti 24kW Flood</option>
             <option value=2490000>Desisti 24kW Spot</option>
             <option value=1800>Keylite BoulChi 1kW 1/2</option>
+            <option value=6300>Keylite BoulChi 5kW 1/2</option>
+            
+            <option value=2269>Desisti Giotto 1kW</option> 
+            <option value=6300>Keylite BoulChi 5kW 1/2</option> 
             <option value=6300>Keylite BoulChi 5kW 1/2</option> 
         </optgroup>
     </select>
@@ -278,76 +293,20 @@
         
     </div>
     
-    
-    
-    <div class="display">
-        <span class="text-wrapper">
-            <span class="letters" id="display"></span>
-        </span>
+    <div class="display" id="display1">
     </div>
     
-  
-
-
-<!--
-<table class="table">
-    <colgroup>
-        <col style="width: 6em">
-        <col style="width: 6em">
-        <col style="width: 6em">
-    </colgroup>
+    <div class="display" id="display2">
     
-    <tr>
-        <td>1 m</td>
-        <td id="ecl1"></td>
-        <td id="1"></td>
-    </tr>
-    <tr>
-        <td>2 m</td>
-        <td id="ecl2"></td>
-        <td id="2"></td>
-    </tr>
-    <tr>
-        <td>3 m</td>
-        <td id="ecl3"></td>
-        <td id="3"></td>
-    </tr>
-    <tr>
-        <td>5 m</td>
-        <td id="ecl5"></td>
-        <td id="5"></td>
-    </tr>
-    <tr>
-        <td>10 m</td>
-        <td id="ecl10"></td>
-        <td id="10"></td>
-    </tr>
-    <tr>
-        <td>20 m</td>
-        <td id="ecl20"></td>
-        <td id="20"></td>
-    </tr>
-    <tr>
-        <td>30 m</td>
-        <td id="ecl30"></td>
-        <td id="30"></td>
-    </tr>
-    <tr>
-        <td>50 m</td>
-        <td id="ecl50"></td>
-        <td id="50"></td>
-    </tr> 
-</table>
--->
+    </div>
     
     
 </div>
-
-    
+   
   <div class="credits">
     version 1.81 - ©2020 Antoine Pous
     </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+
 <script src="script.js"></script>
 
 </body>

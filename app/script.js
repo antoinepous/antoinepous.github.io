@@ -81,19 +81,18 @@ function minusDist() {
     document.getElementById('dist').value = distValue;
 }
 
+
 function listboxresult() {
     "use strict";
     function round(x, y) { return parseFloat(Number.parseFloat(x).toFixed(y)); }
     var dataLightValue = document.getElementById("listedata").options[document.getElementById("listedata").selectedIndex].value;
-    if (dataLightValue == 0) {
+    if (dataLightValue === 0) {
         alert("You have not selected any light !");
-    }
-    
-    else {
-    var dataLight = parseInt(dataLightValue, 10);
-    var iso = parseInt(isoValue, 10);
-    var fps = parseInt(fpsValue, 10);
-    var dist = parseFloat(distValue, 10);
+    } else {
+        var dataLight = parseInt(dataLightValue, 10);
+        var iso = parseInt(isoValue, 10);
+        var fps = parseInt(fpsValue, 10);
+        var dist = parseFloat(distValue, 10);
 
     //let e1 = dataLight * (1 ** 2);
     //let e2 = round(e1/4, 0);
@@ -209,28 +208,10 @@ function listboxresult() {
         }
     
     var litteral = conv[app]
-    
-    document.getElementById("display").innerHTML = litteral;
-    }
-    
-    var textWrapper = document.querySelector('.display .letters');
-    textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
 
-    anime.timeline({loop: false})
-    .add({
-        targets: '.display .letter',
-        translateY: ["1.1em", 0],
-        translateZ: 0,
-        duration: 750,
-        delay: (el, i) => 50 * i
-    })
-    .add({
-        targets: '.display',
-        opacity: 1,
-        duration: 1000,
-        easing: "easeOutExpo",
-        delay: 1000
-    });
+    document.getElementById("display1").innerHTML = litteral;
+    document.getElementById("display2").innerHTML = e;
+    }
     
     /*
     for (let k = 0; k < val.length; k++) {
