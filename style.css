@@ -6,16 +6,10 @@ body {
 }
 
 .page {
-    background-color: rgb(20,20,20);
-    color: lightgrey;
+    background-color: rgb(27,42,59);
+    color: rgb(255,255,255);
 }
 
-.year {          
-    font-family: 'Permanent Marker', cursive;
-    font-size: 2.5rem;
-    margin-bottom: 0rem;
-    margin-top: 2rem;
-}
 
 .text {
     font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif; 
@@ -39,7 +33,7 @@ body {
     text-align: center;
     padding-right: 0rem;
     padding-left: 0rem;
-    margin-top: 1rem;
+    margin-top: rem;
     font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif;
 }
 
@@ -48,26 +42,26 @@ body {
     text-align: center;
     padding-left: 0.3rem;
     padding-right: 0.3rem;
-    background-color: lightgray;
     margin-right: 0rem;
     margin-left: 0rem;
     font-weight: 900;
-    font-size: 1rem;
-    letter-spacing: -1px;
+    font-size: 1.3rem;
+    letter-spacing: px;
 }
 
 .menu {
     text-decoration: none;
-    color: rgb(20,20,20);
+    color: rgb(0,255,0);
 }
 
 .menu:hover {
     text-decoration: none;
-    color: rgb(20,20,20);
+    color: rgb(255,255,255);
 }
 
 .logo {
     font-family: HelveticaNeue, "Helvetica Neue", Helvetica, "MS Arial", Arial, sans-serif;
+    color: rgb(0,255,0);
     max-width: 100%; 
     letter-spacing: -2px;
     text-align: center;
