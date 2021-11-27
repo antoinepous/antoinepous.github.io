@@ -1,0 +1,288 @@
+body {
+    background-color:#FFFFFF;
+}
+
+.window {
+    margin: auto;
+    width: 20em;
+    text-align: center;
+}
+
+.titre {
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 900;
+	font-size: 2em; 
+	text-align: center; 
+	color: black; 
+	margin-bottom: 1em;
+    margin-top: 1em;
+    max-width: 100%;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+	font-size: 20px;
+    color: black;
+    column-count: 4;
+    text-align: center;
+    width: 100%;
+    line-height: 2.2em;
+}
+
+.container1 {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+	font-size: 18px;
+    color: black;
+    column-count: 3;
+    text-align: center;
+    width: 100%;
+    line-height: 1em;
+}
+
+.container2{
+    margin-right: auto;
+    margin-left: auto;
+    color: white;
+    column-count: 1;
+    text-align: right;
+    width: 100%;
+    display: block;
+}
+
+.container3 {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+	font-size: 18px;
+    color: black;
+    column-count: 3;
+    text-align: center;
+    width: 100%;
+    line-height: 1em;
+}
+
+.container4 {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+	font-size: 14px;
+    column-count: 5;
+    text-align: left;
+    width: 100%;
+    line-height: 1.2em;
+    background-color:dodgerblue;
+    color: white;
+    padding: 0.3em;
+    
+}
+
+.container5 {
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+	font-size: 12px;
+    color: black;
+    column-count: 5;
+    text-align: left;
+    width: 100%;
+    line-height: 1.2em;
+    padding: 0.3em;
+    border-color: grey;
+    border-style: solid;
+    border-width: thin
+}
+.label {
+    margin-top: 0em;
+    margin-bottom: 0em;
+    text-align: left;
+    font-size: 24px;
+    margin-left: 1.5em;
+}
+
+.plus {
+    position: relative;
+    left: 1em;
+}
+
+.value {
+    position: relative;
+}
+
+.minus {
+    position: relative;
+    right: 1em;
+}
+
+input {
+    color: black;
+    text-decoration: none;
+    background: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+	font-size: 20px;
+    text-align: center;
+    border-width: 2px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 10px;
+    padding: 1px;
+    margin-bottom: 0.1em;
+    margin-top: 0.1em;
+}
+
+input:focus {
+    outline: none;
+}
+
+select:focus {
+    outline: none;
+    cursor: pointer;
+}
+
+::placeholder {
+  color: black;
+  opacity: 1;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+select {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    display: block;
+	font-size: 18px;
+    color: black;
+    text-align: left;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:0.5em;
+    margin-bottom: 1em;
+    border-color: black; 
+    padding: 5px;
+    border-width: 2px;
+    border-radius: 10px;
+    -moz-appearance: none;
+    -webkit-appearance:none;
+    appearance: none;
+    background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='100' height='100' fill='white'><polygon points='0,0 100,0 50,50'/></svg>") no-repeat;
+    background-size: 12px;
+    background-position: calc(100% - 15px) calc(100% - 8px);
+}
+
+.select:hover {
+    cursor: pointer;
+}
+
+option {
+    padding: 1px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+
+.button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 100px;
+    padding-top: 0px;
+    padding-bottom: 7px;
+    margin-top: 2px;
+}
+
+button:focus {
+    outline: none;
+}
+
+.button_calculate {
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(35,60,75);
+    font-size: 1.2em;
+    font-weight: 900;
+    width: 5em;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-radius: 10px;
+    background-color: white;
+    text-decoration: none;
+    -moz-appearance: none; 
+	-webkit-appearance: none; 
+	appearance: none;
+}
+
+.button_calculate:active {
+    opacity: 0.5;
+}
+
+.button_calculate:hover {
+    cursor: pointer;
+}
+
+.display {
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+	font-size: 3em; 
+    color: black;
+    position: relative;
+    text-align: center;  
+}
+
+.display .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 0.2em;
+  padding-right: 0.05em;
+  padding-bottom: 0.1em;
+  overflow: hidden;
+}
+
+.display .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.credits {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+	font-size: 0.8em; 
+    color: black;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1em;
+    width: 100%;
+    text-align: center;
+}
+
+.material-icons.md-light.info {
+    color: rgba(0, 0, 0, 1);
+    position: relative;
+    font-size: 28px;
+    top: 1px;
+    left: 10px;
+}
+
+.material-icons.md-light { 
+    color: rgba(0, 0, 0, 1);
+    font-size: 28px;
+    position: relative;
+    top: 5px;
+    bottom: 0px;
+}
+.material-icons.md-light.md-inactive { color: rgba(0, 0, 0, 0.3); }

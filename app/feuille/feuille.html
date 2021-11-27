@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Antoine Pous">
+    <meta name="description" content="photometric database web app">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@300&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="app-style.css" media="all" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="icon" href="http://www.antoinepous.com/app/favicon.ico" />
+    <title>feuille d'heure</title>
+    
+</head>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    
+<body>
+<div class="window">
+    
+    <h1 class="titre">feuille d'heure</h1>
+
+   <input type="date" id="date" name="trip-start"
+       value="2021-06-18"
+       min="2018-01-01" max="2030-12-31">
+    
+    
+    
+    <select name="listbox" id="convention" size="1">  
+        <optgroup label="CINEMA ANNEXE 1">
+            <option value=30.11>Chef électricien de construction</option>
+            <option value=26.55>Sous chef électricien de construction</option>
+            <option value=24.66>Électricien de construction</option>
+            <option value=28.79>Chef électricien de PDV</option>
+            <option value=25.29>Sous chef électricien de PDV</option>
+            <option value=23.79>Électricien de PDV</option>
+        </optgroup>
+        <optgroup label="PUBLICITE">
+            <option value=45.17>Chef électricien de construction</option>
+            <option value=39.82>Sous chef électricien de construction</option>
+            <option value=36.99>Électricien de construction</option>
+            <option value=43.19>Chef électricien de PDV</option>
+            <option value=37.93>Sous chef électricien de PDV</option>
+            <option value=35.69>Électricien de PDV</option>
+        </optgroup>
+        <optgroup label="USPA">
+            <option value=28.20>Chef électricien</option>
+            <option value=23.14>Électricien / éclairagiste</option>
+            <option value=26.22>Électricien déco</option>
+        </optgroup>
+        
+          
+        
+    </select>
+    
+    <div class="container1">
+        <div><label for="debut">Début</label></div>
+        <div><label for="repas">Repas</label></div>
+        <div><label for="fin">Fin</label></div>
+    </div>
+    
+    <div class="container3"> 
+        <div><input id="start-time" type="time" name="debut" value="07:00"></div>
+        <div><input id="repas-time" type="time" name="repas" value="12:00"></div>
+        <div><input id="end-time" type="time" name="fin" value="19:00"></div>
+    </div>
+    
+        
+    <input type="button" class="button_calculate" id="but1" value="calculate" onclick="listboxresult()">
+    
+    
+    <div class="container4">
+        <div>Total Heures</div>
+        <div>Maj. +25%</div>
+        <div>Maj. +50%</div>
+        <div>Maj. continue</div>
+        <div>Maj. nuit</div>
+    </div>
+    <div class="container5">
+        <div id="th"></div>
+        <div id="25"></div>
+        <div id="50"></div>
+        <div id="continue"></div>
+        <div id="nuit"></div>
+    </div>
+
+    
+    
+</div>
+   
+  <div class="credits">
+    version 1.81 - ©2020 Antoine Pous
+    </div>
+    
+<script src="script.js"></script>
+
+</body>
+</html>
